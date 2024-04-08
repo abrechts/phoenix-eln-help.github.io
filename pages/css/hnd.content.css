@@ -49,25 +49,134 @@ a.rvts7, span.rvts7 /* Font Style */
 }
 span.rvts8
 {
+ font-size: 11pt;
+ font-family: 'Segoe UI';
 }
 span.rvts9
 {
+ font-size: 11pt;
+ font-family: 'Segoe UI';
  font-weight: bold;
  color: #0000ff;
 }
 span.rvts10
 {
+ font-size: 11pt;
+ font-family: 'Segoe UI';
  font-weight: bold;
  color: #000080;
 }
 span.rvts11
 {
+ font-size: 11pt;
+ font-family: 'Segoe UI';
  font-style: italic;
  color: #800000;
 }
 a.rvts12, span.rvts12
 {
+ font-size: 11pt;
+ font-family: 'Segoe UI';
  color: #008000;
+ text-decoration: underline;
+}
+span.rvts13
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ font-style: italic;
+}
+a.rvts14, span.rvts14
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ color: #0000ff;
+ text-decoration: underline;
+}
+span.rvts15
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ font-weight: bold;
+ color: #333333;
+}
+span.rvts16
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ font-style: italic;
+ font-weight: bold;
+}
+span.rvts17
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ font-style: italic;
+ font-weight: bold;
+ color: #333333;
+}
+span.rvts18
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ font-style: italic;
+ font-weight: bold;
+ color: #0070c0;
+}
+span.rvts19
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ font-style: italic;
+ font-weight: bold;
+ color: #0070c0;
+ background-color: canvas;
+}
+a.rvts20, span.rvts20
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ font-style: italic;
+ color: #0000ff;
+ text-decoration: underline;
+}
+span.rvts21
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ font-style: italic;
+ color: #333333;
+}
+span.rvts22
+{
+ font-size: 12pt;
+ font-family: 'Segoe UI';
+ font-weight: bold;
+}
+span.rvts23
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ font-weight: bold;
+}
+span.rvts24
+{
+ font-size: 12pt;
+ font-family: 'Segoe UI';
+ font-weight: bold;
+ color: #0057e3;
+}
+span.rvts25
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ text-decoration: underline;
+}
+span.rvts26
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ font-style: italic;
  text-decoration: underline;
 }
 /* ========== Para Styles ========== */
@@ -95,9 +204,72 @@ p,ul,ol /* Paragraph Style */
 }
 .rvps3
 {
+ margin: 0px 0px 6px 0px;
 }
 .rvps4
 {
  text-align: center;
+ margin: 0px 0px 6px 0px;
 }
+.rvps5
+{
+ margin: 8px 0px 8px 0px;
+}
+.rvps6
+{
+ margin: 8px 0px 10px 0px;
+}
+.rvps7
+{
+ margin: 6px 0px 6px 0px;
+}
+.rvps8
+{
+ margin: 6px 0px 0px 0px;
+}
+.rvps9
+{
+ margin: 6px 0px 10px 0px;
+}
+.rvps10
+{
+ margin: 0px 0px 8px 0px;
+}
+.rvps11
+{
+ margin: 6px 0px 12px 0px;
+}
+.rvps12
+{
+ margin: 0px 0px 10px 0px;
+}
+.rvps13
+{
+ text-align: left;
+ text-indent: 0px;
+ break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 16px 0px 4px 0px;
+}
+.rvps14
+{
+ margin: 0px 0px 4px 0px;
+}
+.rvps15
+{
+ margin: 16px 0px 4px 0px;
+}
+.rvps16
+{
+ margin: 0px 0px 6px 24px;
+}
+.rvps17
+{
+ margin: 6px 0px 6px 24px;
+}
+/* ========== Lists ========== */
+.list0 {text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;}
+.list1 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;}
+.list2 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;}
+.list3 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;}
 li.noindent { margin-left: 0; padding-left: 0; }
