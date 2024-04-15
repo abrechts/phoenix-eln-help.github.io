@@ -195,27 +195,15 @@
             <div class="main-content">
                 
 <hr style="height : 1px; background-color : canvastext; border-style : none;">
-<p class="rvps24"><span class="rvts15">Yield Calculations</span></p>
-<p class="rvps3"><span class="rvts8">The reaction yield often is a first sight quality indicator of a reaction - the higher, the better. However, if </span><span class="rvts13">purity</span><span class="rvts8"> is not part of the game (i.e. assumed to be 100%), this becomes an ambiguous assessment. Thus, it should be obvious that a 95% percent yield of a crude product with a purity of just 25% is not the same as a 95% yield of the same product of 97% purity - although the yields look identical. In the worst case, this can be misleading.</span></p>
-<p class="rvps3"><span class="rvts8">Therefore stoichiometric yield calculations usually relate </span><span class="rvts16">available</span><span class="rvts8"> </span><span class="rvts13">product</span><span class="rvts8"> </span><span class="rvts13">mols</span><span class="rvts8"> to </span><span class="rvts16">available</span><span class="rvts8"> </span><span class="rvts13">reactant</span><span class="rvts8"> </span><span class="rvts13">mols</span><span class="rvts8">. Available mols are not only determined by material amount and molecular weight, but also by </span><span class="rvts13">purity</span><span class="rvts8">. Thus, a given amount of a material of 50% purity actually contains only half the mols of the same pure material. &nbsp;&nbsp;</span></p>
-<div class="rvps3">
-<table width="75%" cellpadding="1" style="border-width: 0px; border-spacing: 2px; padding: 12px 0px;">
- <tr style="vertical-align: top;">
-  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; border-right: none; border-left: none; width: 785px;">
-   <p class="rvps8"><span class="rvts18">Purity Effect on Yield:</span><span class="rvts17">&nbsp;</span></p>
-   <p class="rvps3"><span class="rvts8">The reaction yield is </span><span class="rvts13">increased</span><span class="rvts8"> by decreasing reference reactant purity, and </span><span class="rvts13">decreased</span><span class="rvts8"> by decreasing reference product purity.</span></p>
-  </td>
- </tr>
-</table>
-</div>
-<p class="rvps3"><span class="rvts8">It's ultimately a team decision on how to handle purities for yield calculations. The important thing is to agree on a </span><span class="rvts16">common</span><span class="rvts8"> policy to obtain comparable yields with a well understood meaning,</span></p>
-<p class="rvps24"><span class="rvts15">Equivalent Calculations</span></p>
-<p class="rvps3"><span class="rvts8">Assigning a </span><span class="rvts13">reference reactant</span><span class="rvts8"> purity influences the </span><span class="rvts13">reagent equivalent </span><span class="rvts8">calculations in analogy to above yield calculations. The lower the reference reactant purity, the lower the calculated reagent amount for a given equivalent specification. If a reagent is specified as weight or volume, then its calculated equivalents are </span><span class="rvts16">increased</span><span class="rvts8"> when the reference reactant purity is </span><span class="rvts16">reduced</span><span class="rvts8">.&nbsp;</span></p>
-<p class="rvps24"><span class="rvts15">Phoenix ELN Purity Support</span></p>
-<p class="rvps3"><span class="rvts27">The material dialogs for reference reactants, reagents and products contain a text box for entering a purity in percent. If a value is specified there, it becomes part of the stoichiometric calculations described above. If left empty, a 100% purity is assumed.</span></p>
-<p class="rvps3"><span class="rvts27"><br/></span></p>
-<p class="rvps3"><span class="rvts27"><br/></span></p>
-<p class="rvps3"><span class="rvts27"></span><span class="rvts8"></span></p>
+<p class="rvps3"><span class="rvts8">Phoenix ELN includes material </span><span class="rvts13">purities</span><span class="rvts8"> into stoichiometric </span><span class="rvts13">yield</span><span class="rvts8"> and </span><span class="rvts13">equivalent</span><span class="rvts8"> calculations, if specified. Unspecified purities are assumed to be 100%.&nbsp;</span></p>
+<p class="rvps3"><span class="rvts8">Here's an </span><span class="rvts13">example</span><span class="rvts8"> for demonstrating the difference between specified and unspecified purities: Assume you isolate a product in </span><span class="rvts13">96% yield</span><span class="rvts8">, which is fantastic. However it turns out that its purity is only </span><span class="rvts13">50%</span><span class="rvts8">. Specifying the obtained 50% purity in the product dialog will lead to an effective </span><span class="rvts13">48% yield</span><span class="rvts8">, which actually reflects all the product you have at hand - the rest is side products. </span><span class="rvts17">Not</span><span class="rvts8"> specifying a purity leaves the reaction yield at 95%, which may not fully reflect the quality of the outcome.&nbsp;</span></p>
+<p class="rvps3"><span class="rvts8">It's ultimately a team decision on how to handle purities for stoichiometric calculations. It's basically the choice between realistic and optimistic calculations, the latter always assuming 100% purities. The important thing is to agree on a </span><span class="rvts17">common</span><span class="rvts8"> policy to obtain comparable yields with a well understood meaning.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts28"><br/></span></p>
+<p class="rvps3"><span class="rvts28"></span><span class="rvts8"></span></p>
 
             </div>
             
