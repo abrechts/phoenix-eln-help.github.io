@@ -1,12 +1,12 @@
 /* ========== Text Styles ========== */
-hr { color: canvastext}
+hr { color: #000000}
 .main-content, .main-content table span.rvts0 /* Normal text */
 {
  font-size: 10pt;
  font-family: 'Arial', 'Helvetica', sans-serif;
  font-style: normal;
  font-weight: normal;
- color: canvastext;
+ color: #000000;
  text-decoration: none;
 }
 span.rvts1 /* Heading */
@@ -128,7 +128,7 @@ span.rvts19
  font-style: italic;
  font-weight: bold;
  color: #0070c0;
- background-color: canvas;
+ background-color: #ffffff;
 }
 a.rvts20, span.rvts20
 {
