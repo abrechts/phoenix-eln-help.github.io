@@ -193,10 +193,19 @@ span.rvts29
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
+ font-style: italic;
+ font-weight: bold;
+ color: #3f3f3f;
+ background-color: #e5e5e5;
+}
+span.rvts30
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
  font-weight: bold;
  color: #007bbf;
 }
-span.rvts30
+span.rvts31
 {
  font-size: 12pt;
  font-family: 'Segoe UI';
