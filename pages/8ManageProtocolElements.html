@@ -199,8 +199,8 @@
 <p class="rvps24"><span class="rvts8">Clicking a protocol element selects it for editing, rearrangement or deletion. A selected protocol element is marked by a colored </span><span class="rvts13">marker line</span><span class="rvts8"> to its left, and a </span><span class="rvts13">drag area</span><span class="rvts8"> to its right (see below).&nbsp;</span><br/><span class="rvts8"><br/></span></p>
 <p class="rvps3"><span class="rvts8">&nbsp;</span><img alt="" style="width : 663px; height : 44px; padding : 1px;" src="lib/ProtElements_Selection.png"></p>
 <p class="rvps3"><span class="rvts8">The current selection is </span><span class="rvts26">cleared</span><span class="rvts8"> by pressing the ESC key, or by clicking into an empty protocol area.&nbsp;</span></p>
-<p class="rvps24"><span class="rvts29">Tip 1&nbsp;</span><span class="rvts17"> To select a material entry (reagent, solvent, etc.) without opening its material dialog, just click into the empty space between its text and its right edge</span><span class="rvts8">.</span></p>
-<p class="rvps9"><span class="rvts29">Tip 2&nbsp;</span><span class="rvts8"> </span><span class="rvts17">When repeating an experiment, you can use the </span><span class="rvts24">marker line</span><span class="rvts17"> to easily locate your current operation. Use the keyboard </span><span class="rvts24">arrow keys</span><span class="rvts17"> to move the current selection up or down, provided the current element is not in text edit mode.</span></p>
+<p class="rvps24"><span class="rvts28">Tip 1&nbsp;</span><span class="rvts17"> To select a material entry (reagent, solvent, etc.) without opening its material dialog, just click into the empty space between its text and its right edge</span><span class="rvts8">.</span></p>
+<p class="rvps9"><span class="rvts28">Tip 2&nbsp;</span><span class="rvts8"> </span><span class="rvts17">When repeating an experiment, you can use the </span><span class="rvts24">marker line</span><span class="rvts17"> to easily locate your current operation. Use the keyboard </span><span class="rvts24">arrow keys</span><span class="rvts17"> to move the current selection up or down, provided the current element is not in text edit mode.</span></p>
 <hr style="height : 1px; background-color : #000000; border-style : none;">
 <p class="rvps23"><span class="rvts15">Rearrange Protocol Elements</span></p>
 <p class="rvps3"><span class="rvts8">Protocol elements can be </span><span class="rvts25">rearranged</span><span class="rvts8"> via </span><span class="rvts17">drag/drop. </span><span class="rvts8">Assume you'd like to move the "Toluene" entry in the following example to insert it below the "Reactant" entry:</span></p>
@@ -217,17 +217,21 @@
 </ol>
 <p class="rvps3"><span class="rvts8">&nbsp; &nbsp; &nbsp; </span><img alt="" style="width : 650px; height : 85px; padding : 1px;" src="lib/ProtElements_DragDrop.png"></p>
 <hr style="height : 1px; background-color : #000000; border-style : none;">
-<p class="rvps22"><span class="rvts15">Delete Protocol Elements</span></p>
-<p class="rvps20"><span class="rvts8">There are two options to </span><span class="rvts25">delete</span><span class="rvts8"> </span><span class="rvts23">individual</span><span class="rvts8"> protocol elements:</span></p>
+<p class="rvps22"><span class="rvts15">Protocol Element Context Menu</span></p>
+<p class="rvps21"><span class="rvts8">Right-click the drag area to the right of any protocol element to display the context menu below:</span></p>
+<p class="rvps21"><img alt="" style="width : 220px; height : 98px; padding : 1px;" src="lib/ProtElements_ContextMnu.png"></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps21 noindent"><span class="rvts8">Right-click the</span><span class="rvts13"> drag area</span><span class="rvts8"> of the element and click the </span><span class="rvts13">Delete</span><span class="rvts8"> menu item from the appearing context menu.</span></li>
- <li class="rvps20 noindent"><span class="rvts8">A selected element also can be deleted by pressing the </span><span class="rvts13">DEL key.</span><span class="rvts28"> </span><span class="rvts27">However, this only works as expected if the selected element is not in text edit mode, where DEL deletes a character. To leave text edit mode, just click inside the </span><span class="rvts13">drag area.</span><span class="rvts27">&nbsp;</span></li>
+ <li class="rvps21 noindent"><span class="rvts13">Duplicate</span><span class="rvts8">: This option is only is available for materials (reagents, solvents, etc.). It copies the current material and places the resulting duplicate right below it. You may then drag/drop the duplicate to the desired location in the protocol. This is a time saver when utilizing multiple portions of the same material, e.g. an organic solvent during multiple extractions.</span></li>
+ <li class="rvps21 noindent"><span class="rvts13">Remove</span><span class="rvts8">: Deletes the current protocol entry. - Alternatively, you can also use the DEL key, provided the current protocol item is not in text edit mode. In such case, this will just delete a character in the text being edited. </span><span class="rvts27">To leave text edit mode, just click the drag area to the right of the protocol entry</span><span class="rvts25">.</span></li>
 </ul>
-<p class="rvps3"><span class="rvts27">To </span><span class="rvts30">delete</span><span class="rvts27"> </span><span class="rvts30">all</span><span class="rvts27"> protocol elements at once, with the exception of the reference reactant, just click the </span><span class="rvts13">Clear </span><span class="rvts8">button located in the main toolbar. The reference reactant will not be removed since it is coupled to the reaction sketch.</span></p>
-<p class="rvps3"><span class="rvts13">&nbsp; &nbsp; &nbsp; </span><img alt="" style="width : 64px; height : 28px; padding : 1px;" src="lib/ProtElements_ClearBtn.png"></p>
 <hr style="height : 1px; background-color : #000000; border-style : none;">
-<p class="rvps20"><span class="rvts8"><br/></span></p>
-<p class="rvps20"><span class="rvts8"></span><span class="rvts8"></span></p>
+<p class="rvps22"><span class="rvts15">Clear Protocol</span></p>
+<p class="rvps3"><span class="rvts27">To </span><span class="rvts29">delete</span><span class="rvts27"> </span><span class="rvts29">all</span><span class="rvts27"> protocol elements at once, with the exception of the reference reactant, just click the </span><span class="rvts13">Clear </span><span class="rvts8">button located in the main toolbar. Note that the reference reactant will not be removed since it is coupled to the reaction sketch.</span></p>
+<p class="rvps25"><span class="rvts13">&nbsp; &nbsp; &nbsp; </span><img alt="" style="width : 64px; height : 28px; padding : 1px;" src="lib/ProtElements_ClearBtn.png"></p>
+<p class="rvps3"><span class="rvts8">This operation is useful for restarting an experiment from scratch.</span></p>
+<hr style="height : 1px; background-color : #000000; border-style : none;">
+<p class="rvps21"><span class="rvts8"><br/></span></p>
+<p class="rvps21"><span class="rvts8"></span><span class="rvts8"></span></p>
 
             </div>
             

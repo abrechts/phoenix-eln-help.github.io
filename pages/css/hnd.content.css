@@ -186,8 +186,10 @@ span.rvts28
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
+ font-style: italic;
  font-weight: bold;
- color: #333333;
+ color: #3f3f3f;
+ background-color: #e5e5e5;
 }
 span.rvts29
 {
@@ -195,14 +197,12 @@ span.rvts29
  font-family: 'Segoe UI';
  font-style: italic;
  font-weight: bold;
- color: #3f3f3f;
- background-color: #e5e5e5;
+ color: #333333;
 }
 span.rvts30
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
- font-style: italic;
  font-weight: bold;
  color: #333333;
 }
@@ -305,19 +305,19 @@ p,ul,ol /* Paragraph Style */
 }
 .rvps18
 {
- margin: 6px 0px 14px 0px;
+ margin: 12px 0px 6px 0px;
 }
 .rvps19
 {
- margin: 10px 0px 6px 0px;
+ margin: 6px 0px 14px 0px;
 }
 .rvps20
 {
- margin: 4px 0px 10px 0px;
+ margin: 10px 0px 6px 0px;
 }
 .rvps21
 {
- margin: 4px 0px 6px 0px;
+ margin: 4px 0px 10px 0px;
 }
 .rvps22
 {
@@ -332,19 +332,35 @@ p,ul,ol /* Paragraph Style */
 }
 .rvps25
 {
- margin: 10px 0px 10px 0px;
+ margin: 0px 0px 2px 0px;
 }
 .rvps26
 {
- margin: 6px 0px 4px 0px;
+ margin: 10px 0px 10px 0px;
 }
 .rvps27
+{
+ margin: 6px 0px 4px 0px;
+}
+.rvps28
+{
+ margin: 7px 0px 8px 0px;
+}
+.rvps29
+{
+ margin: 8px 0px 6px 0px;
+}
+.rvps30
 {
  text-align: left;
  text-indent: 0px;
  break-after: avoid;
  padding: 0px 0px 0px 0px;
  margin: 16px 0px 4px 0px;
+}
+.rvps31
+{
+ margin: 4px 0px 6px 0px;
 }
 /* ========== Lists ========== */
 .list0 {text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;}
