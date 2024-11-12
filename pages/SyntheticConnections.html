@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Standard Edition 9.3.0.281">
+  <meta name="generator" content="HelpNDoc Standard Edition 9.4.0.372">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -183,7 +183,7 @@
                         
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="10ExperimentTabs.html" title="10) Experiment Tabs" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ReactionSearches.html" title="Reaction Searches" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="MaterialsDatabase.html" title="Materials Database" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ReactionSearches.html" title="Reaction Searches" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -203,8 +203,8 @@
 <p class="rvps3"><span class="rvts8">The detected synthetic routes include both </span><span class="rvts17">upstream</span><span class="rvts8"> and </span><span class="rvts17">downstream</span><span class="rvts8"> sequences, if present (our example just contains downstream ones for simplicity). The sequence containing the current experiment is titled "Main Sequence". Sequences stop whenever no more subsequent step is found, or when their last product is shared by multiple downstream sequences (i.e. when </span><span class="rvts17">branching off</span><span class="rvts8">). Thus, in our example, "Main Sequence" branches off into the individual sequences 2a, 2b, and 4, meaning that the intermediate produced by "Main Sequence" was utilized as starting material for the subsequent 3 sequences.</span></p>
 <p class="rvps3"><span class="rvts8">Sequences also will end when they </span><span class="rvts17">merge</span><span class="rvts8">, i.e. when they contain an intermediate which is also part of another sequence, as demonstrated for the sequences 2a and 2 b merging into the common sequence 3. Merging sequences are assigned an identical sequence number, followed by the suffix a, b, c, etc. (i.e. 2a and 2b in our example). Upstream sequences, i.e. the one leading to your current experiment, are assigned negative numbers, e.g. 'Sequence -3'. Sequences also can merge into a single product instead of a sequence, if the synthesis ends at this point. This situation is represented by a single dot box:&nbsp;</span></p>
 <p class="rvps3"><span class="rvts8">&nbsp; &nbsp;</span><img alt="" style="width : 174px; height : 62px; padding : 1px; margin : 6px 0px;" src="lib/Connects_CommonIntermediate.png"></p>
-<p class="rvps24"><span class="rvts13"><br/></span></p>
-<p class="rvps3"><span class="rvts31">Interactions</span></p>
+<p class="rvps23"><span class="rvts13"><br/></span></p>
+<p class="rvps3"><span class="rvts34">Interactions</span></p>
 <p class="rvps3"><span class="rvts8">Clicking a </span><span class="rvts13">sequence</span><span class="rvts8"> in the graph reveals the chemical structures of the sequences it contains, where the step number of the current experiment step is highlighted in bold-italic font.&nbsp;</span></p>
 <p class="rvps3"><span class="rvts8">Clicking a </span><span class="rvts13">step arrow</span><span class="rvts8"> reveals all experiments sharing this step, sorted by decreasing yield.&nbsp;</span></p>
 <p class="rvps3"><span class="rvts8">Clicking an </span><span class="rvts13">experiment</span><span class="rvts8"> in the list to the right opens it in the ELN for examination. Although this changes the current experiment, the connection graph remains based on the initially current experiment.</span></p>
@@ -246,7 +246,7 @@
   <div id="hnd-splitter" style="left: 350px"></div>  
 
   <!-- Scripts -->
-  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
   <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
   <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
   <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
