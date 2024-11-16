@@ -238,10 +238,17 @@ span.rvts34
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
+ color: #1f2328;
+ background-color: #ffffff;
+}
+span.rvts35
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
  font-weight: bold;
  color: #007bbf;
 }
-span.rvts35
+span.rvts36
 {
  font-size: 12pt;
  font-family: 'Segoe UI';
@@ -383,6 +390,10 @@ p,ul,ol /* Paragraph Style */
  margin: 6px 0px 12px 0px;
 }
 .rvps31
+{
+ margin: 20px 0px 6px 0px;
+}
+.rvps32
 {
  text-align: left;
  text-indent: 0px;
