@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Standard Edition 9.5.0.415">
+  <meta name="generator" content="HelpNDoc Standard Edition 9.8.0.588">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -197,7 +197,7 @@
 <hr style="height : 1px; background-color : #000000; border-style : none;">
 <p class="rvps17"><span class="rvts15">General</span></p>
 <p class="rvps3"><span class="rvts8">The built-in materials database allows the convenient addition of reagents, solvents and auxiliaries to the experiment protocol without repeatedly looking up of their molecular weights, molarities, densities, or safety documents. It comes pre-configured with verified properties of approximately 200 commonly used materials, and additionally continuously grows with every use of a material not yet present in the database. Whenever adding a material to the experiment protocol, its last stored properties, including safety documents (see below), are assigned to it.&nbsp;</span></p>
-<p class="rvps30"><img alt="" style="width : 314px; height : 262px; padding : 1px;" src="lib/Triethylamine_Select.png"></p>
+<p class="rvps31"><img alt="" style="width : 314px; height : 262px; padding : 1px;" src="lib/Triethylamine_Select.png"></p>
 <p class="rvps3"><span class="rvts8">The drop down menu of the material dialogs (see above image) is directly populated from the materials database. To select a specific material from the list, you can apply one of the following options:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps3 noindent"><a name="MatSafetyDocs"></a><span class="rvts8">Click on it.</span></li>
@@ -205,8 +205,8 @@
  <li class="rvps3 noindent"><span class="rvts8">Shortcut: Press the CTRL-key while clicking a material, to add it directly to the protocol without confirming the dialog first.&nbsp;</span></li>
 </ul>
 <p class="rvps3"><span class="rvts8">Each material entry in the drop-down menu contains an "x" button to its right, which allows to remove it from the database. Finally, editing the properties of a material will apply the updated values to all future protocol entries of it.</span></p>
-<p class="rvps31"><span class="rvts15">Material Safety Documents</span></p>
-<p class="rvps23"><span class="rvts34">The immediate availability of material safety documents &nbsp;is crucial in case of an emergency situation</span><span class="rvts8">. Therefore all reagents, solvents and auxiliaries allow the attachment of up to three safety-related PDF documents of your choice. This attachment is global, i.e. all future additions of the affected material will contain the assigned safety documents by default.&nbsp;</span></p>
+<p class="rvps32"><span class="rvts15">Material Safety Documents</span></p>
+<p class="rvps23"><span class="rvts38">The immediate availability of material safety documents &nbsp;is crucial in case of an emergency situation</span><span class="rvts8">. Therefore all reagents, solvents and auxiliaries allow the attachment of up to three safety-related PDF documents of your choice. This attachment is global, i.e. all future additions of the affected material will contain the assigned safety documents by default.&nbsp;</span></p>
 <p class="rvps9"><img alt="" style="width : 168px; height : 52px; padding : 1px;" src="lib/SafetyDocs_Addition.png"></p>
 <p class="rvps3"><span class="rvts8">The material properties dialogs of reagents, solvents and auxiliaries contain a </span><span class="rvts17">SafetyDocs</span><span class="rvts8"> area for managing these documents. Click the </span><span class="rvts17">Add</span><span class="rvts8"> button (+) to attach one or several safety related PDF documents. Please note that only PDF documents are supported, with a maximum size of 15 MB per document and a maximum of 3 documents per material. After attachment, the selected document appears in the </span><span class="rvts17">Safety</span><span class="rvts8"> </span><span class="rvts17">Docs</span><span class="rvts8"> area. If only one document is attached, it can be clicked directly for viewing in the current default PDF viewer. This is indicated by a "Hand" icon:</span></p>
 <p class="rvps3"><img alt="" style="width : 302px; height : 59px; padding : 1px;" src="lib/SafetyDocs_OneDoc.png"></p>
@@ -278,22 +278,7 @@
   <script src="js/app.min.js"></script>
 
   <!-- Init script -->
-  <script>
-    $(function() {
-      // Create the app
-      var app = new Hnd.App({
-        searchEngineMinChars: 3
-      });
-      // Update translations
-      hnd_ut(app);
-	  // Instanciate imageMapResizer
-	  imageMapResize();
-	  // Custom JS
-	  
-      // Boot the app
-      app.Boot();
-    });
-  </script>
+  <script src="_topic_init.js"></script>
 
 
 
