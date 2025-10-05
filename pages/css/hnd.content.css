@@ -455,13 +455,17 @@ p,ul,ol /* Paragraph Style */
 }
 .rvps32
 {
+ margin: 14px 0px 0px 0px;
+}
+.rvps33
+{
  text-align: left;
  text-indent: 0px;
  break-after: avoid;
  padding: 0px 0px 0px 0px;
  margin: 16px 0px 4px 0px;
 }
-.rvps33
+.rvps34
 {
  margin: 8px 0px 8px 0px;
 }
