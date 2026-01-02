@@ -272,26 +272,26 @@ span.rvts39
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
- color: #1f2328;
- background-color: #ffffff;
 }
 span.rvts40
-{
- font-size: 9.5pt;
- font-family: 'Cascadia Mono';
- color: #000000;
- background-color: #ffffff;
-}
-span.rvts41
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
  font-style: italic;
 }
-span.rvts42
+span.rvts41
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
+ color: #1f2328;
+ background-color: #ffffff;
+}
+span.rvts42
+{
+ font-size: 9.5pt;
+ font-family: 'Cascadia Mono';
+ color: #000000;
+ background-color: #ffffff;
 }
 span.rvts43
 {
