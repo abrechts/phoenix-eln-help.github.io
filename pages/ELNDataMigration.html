@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
-  <title>Welcome</title>
+  <title>ELN Data Migration</title>
   <meta name="description" content="" /> 
   <meta name="keywords" content="">
 
@@ -22,11 +22,11 @@
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Welcome">
+  <meta name="twitter:title" content="ELN Data Migration">
   <meta name="twitter:description" content="">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="Welcome" />
+  <meta property="og:title" content="ELN Data Migration" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="Phoenix ELN Help" /> 
@@ -173,39 +173,57 @@
 
     <article>
         <div id="topic-content" class="container-fluid" 
-		  data-hnd-id="Welcome"
-		  data-hnd-context="1"
-		  data-hnd-title="Welcome"
+		  data-hnd-id="ELNDataMigration"
+		  data-hnd-context="20"
+		  data-hnd-title="ELN Data Migration"
 		>
             
                 <div class="navigation">
                     <ol class="breadcrumb">
-                        <li>Introduction</li>
+                        
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="1CreateExperiment.html" title="1) Create Experiment" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="SpellChecking.html" title="Spell Checking" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ELNServer.html" title="ELN Server" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
 
             <a id="main-content"></a>
 
-            <h2>Welcome</h2>
+            <h2>ELN Data Migration</h2>
 
             <div class="main-content">
                 
-<p class="rvps5"><span class="rvts15">About Phoenix ELN</span></p>
-<p class="rvps3"><span class="rvts13">Phoenix ELN </span><span class="rvts8">is an open-source electronic lab notebook for organic, organometallic and peptide chemistry. It performs stoichiometric calculations, allows embedding elements like images and documents into the workflow and comes with an efficient integrated chemical drawing editor.&nbsp;</span></p>
-<p class="rvps3"><span class="rvts8">It allows reaction substructure searches, and it has the the ability to detect synthetic routes and their relations by analyzing the experiment sketches of all experiments present.</span></p>
-<p class="rvps3"><span class="rvts8">No server connection is required for running this ELN, it runs from a local database first. The optional connection to an in-house MySQL or MariaDB server database substantially extends its capabilities, by additionally adding continuous backup and in-house data sharing capabilities.</span></p>
-<p class="rvps3"><span class="rvts8">As an open-source application, Phoenix ELN is available at no cost to end users. You can download the latest version here: </span><a class="rvts14" href="https://github.com/abrechts/Phoenix-ELN/releases" target="_blank">https://github.com/abrechts/Phoenix-ELN/releases</a></p>
-<p class="rvps5"><span class="rvts16"><br/></span></p>
-<p class="rvps3"><span class="rvts8"><br/></span></p>
-<p class="rvps3"><span class="rvts8"><br/></span></p>
-<p class="rvps3"><span class="rvts8"><br/></span></p>
-<p class="rvps3"><span class="rvts8"><br/></span></p>
-<p class="rvps3"><span class="rvts8"><br/></span></p>
-<p class="rvps3"><span class="rvts8"></span><span class="rvts8"></span></p>
+<hr style="height : 1px; background-color : #000000; border-style : none;">
+<p class="rvps22"><span class="rvts15">Introduction</span></p>
+<p class="rvps3"><span class="rvts8">When moving to a new computer, you typically also want to transfer your </span><span class="rvts17">Phoenix ELN</span><span class="rvts8"> data to the new environment. In principle, this may be achieved by following methods, each having its own drawbacks:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3 noindent"><span class="rvts8">If you regularly back up your personal </span><span class="rvts17">Documents</span><span class="rvts8"> folder, restoring the last backup on your new computer will also recover your </span><span class="rvts17">Phoenix ELN</span><span class="rvts8"> data, along with your other files. However, keep in mind that any recent changes to your experiments made after the last backup will not be included, and therefore will be lost after the restore process.&nbsp;</span></li>
+ <li class="rvps3 noindent"><span class="rvts8">If optionally connected to an in-house </span><a class="rvts20" href="ELNServer.html">Phoenix ELN</a><a class="rvts14" href="ELNServer.html"> server</a><span class="rvts8">, you can perform a 'restore from server' action to recreate your local experiments database on your new computer. This is also your last resort if your original ELN data are not available anymore, e.g. after a sudden hardware failure. While efficiently restoring your experiments at their latest state, this will not update your ELN application files and settings.&nbsp;</span></li>
+ <li class="rvps3 noindent"><span class="rvts8">You could also manually move the 'Phoenix ELN Data' folder and its contents from your personal </span><span class="rvts17">Documents</span><span class="rvts8"> folder to your new computer at the same location, replacing the current one if already present. However, such manual actions bear the risk of data loss and inconsistencies, and therefore are not recommended.</span></li>
+</ul>
+<p class="rvps22"><span class="rvts15">ELN Transfer Package</span></p>
+<p class="rvps11"><span class="rvts8">To overcome the limitations of above methods, a simple and reliable method for transferring all </span><span class="rvts17">Phoenix ELN </span><span class="rvts8">experiments and settings is available. It allows to seamlessly perform a complete ELN data transfer, including all settings, at the desired point in time - typically just before switching your work to the new ELN installation.</span></p>
+<p class="rvps11"><span class="rvts8">Here are the required steps:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps8 noindent"><span class="rvts8">Open </span><span class="rvts17">Phoenix ELN </span><span class="rvts8">on the computer to be replaced, i.e. where your current experiments reside.</span></li>
+ <li class="rvps24 noindent"><span class="rvts8">Go to </span><span class="rvts17">Tools &gt; ELN Data Migration &gt; Create Transfer Pack</span><span class="rvts8">. This creates a transfer package (.elnpkg) at the location of your choice. </span><span class="rvts17">Note</span><span class="rvts8">: Although the package is named after the first user encountered in the experiments database, it will contain the experiments of all local users if present.</span></li>
+</ul>
+<p class="rvps36"><span class="rvts8">&nbsp; &nbsp; &nbsp; </span><img alt="" style="width : 345px; height : 184px; padding : 1px;" src="lib/Menu_DataMigration.png"></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps8 noindent"><span class="rvts8">If not yet present, install </span><span class="rvts17">Phoenix ELN </span><span class="rvts8">on the new computer. It will contain the demo experiments at this stage.</span></li>
+ <li class="rvps8 noindent"><span class="rvts8">Open </span><span class="rvts17">Phoenix ELN</span><span class="rvts8"> on the new computer, go to </span><span class="rvts17">Tools &gt; ELN Data Migration &gt; Import Transfer Pack</span><span class="rvts8">, select the .elnpkg package you created before, then click 'Import Package' in the appearing dialog.</span></li>
+ <li class="rvps24 noindent"><span class="rvts8">The application will perform the transfer and subsequently restarts with your transferred experiments and settings in place.</span><br/><span class="rvts8"><br/></span></li>
+</ul>
+<p class="rvps24"><span class="rvts21">Important</span><span class="rvts8">: Do not continue to use the previous ELN installation anymore after data migration, since this would result in two parallel, but inconsistent copies of your experiments database!</span></p>
+<p class="rvps24"><span class="rvts8"><br/></span></p>
+<p class="rvps22"><span class="rvts15">Revert Migration</span></p>
+<p class="rvps24"><span class="rvts8">Be careful not to overwrite </span><span class="rvts17">non-demo</span><span class="rvts8"> experiments by accident when transferring your ELN data to the new computer. A new installation always contains demo experiments, which are uncritical to replace. However, if your new installation already contains productive non-demo experiments for some reason, you will obtain a warning about potential data loss before proceeding with the data migration.</span></p>
+<p class="rvps7"><span class="rvts8">If against all warnings productive data accidentally were overwritten, e.g. by importing a wrong transfer package, an emergency operation is available for reverting the operation. Thus, the file '</span><span class="rvts13">recovery.elnpkg</span><span class="rvts8">' is always placed on your desktop after completed data migration where </span><span class="rvts17">non-demo</span><span class="rvts8"> experiments were replaced. You can import this file via </span><span class="rvts17">Tools &gt; ELN Data Migration &gt; Import Transfer Pack</span><span class="rvts8"> to revert the migration to its original state.&nbsp;</span></p>
+<p class="rvps7"><span class="rvts8">Once the intended data migration was successfully completed, you should delete above recovery file as soon as possible, to prevent accidental permanent reversal to an earlier state of your ELN environment at a later stage by importing it again. Note that reverting a data migration cannot be reverted.</span></p>
+<p class="rvps24"><span class="rvts8"><br/></span></p>
+<p class="rvps24"><span class="rvts8"><br/></span></p>
+<p class="rvps24"><span class="rvts8"></span><span class="rvts8"></span></p>
 
             </div>
             
