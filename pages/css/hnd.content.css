@@ -313,35 +313,123 @@ span.rvts45
  font-size: 12pt;
  font-family: 'Segoe UI';
  font-weight: bold;
+ color: #3333ff;
 }
 span.rvts46
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
- color: #000000;
+ font-weight: bold;
 }
 span.rvts47
+{
+ font-size: 14pt;
+ font-family: 'Segoe UI';
+}
+span.rvts48
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ font-style: italic;
+ color: #414141;
+}
+span.rvts49
+{
+ font-size: 14pt;
+ font-family: 'Segoe UI';
+ font-weight: bold;
+ color: #ff0000;
+}
+span.rvts50
+{
+ font-size: 9pt;
+ font-family: 'Cascadia Mono';
+ color: #000000;
+}
+span.rvts51
+{
+ font-size: 11pt;
+ font-family: 'Google Sans';
+ color: #0a0a0a;
+ background-color: #ffffff;
+}
+span.rvts52
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ font-weight: bold;
+ color: #0000ff;
+ background-color: #ffffff;
+}
+span.rvts53
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ color: #0000ff;
+}
+span.rvts54
+{
+ font-size: 14pt;
+ font-family: 'Segoe UI';
+ color: #ff0000;
+}
+span.rvts55
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ color: #0a0a0a;
+ background-color: #ffffff;
+}
+span.rvts56
+{
+ font-size: 12pt;
+ font-family: 'Segoe UI';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts57
+{
+ font-family: 'Segoe UI';
+ font-weight: bold;
+ color: #ff0000;
+}
+span.rvts58
+{
+ font-family: 'Segoe UI';
+ color: #ff0000;
+}
+span.rvts59
+{
+ font-family: 'Segoe UI';
+}
+span.rvts60
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ color: #000000;
+}
+span.rvts61
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
  font-weight: bold;
  color: #000000;
 }
-span.rvts48
+span.rvts62
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
  color: #000000;
  text-decoration: underline;
 }
-span.rvts49
+span.rvts63
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
  font-style: italic;
  color: #000000;
 }
-span.rvts50
+span.rvts64
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
@@ -349,7 +437,7 @@ span.rvts50
  font-weight: bold;
  color: #000000;
 }
-span.rvts51
+span.rvts65
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
@@ -501,21 +589,29 @@ p,ul,ol /* Paragraph Style */
 }
 .rvps33
 {
- text-align: left;
- text-indent: 0px;
- break-after: avoid;
- padding: 0px 0px 0px 0px;
- margin: 16px 0px 4px 0px;
+ margin: 8px 0px 8px 0px;
 }
 .rvps34
 {
- margin: 8px 0px 8px 0px;
+ margin: 2px 0px 6px 0px;
 }
 .rvps35
 {
- margin: 4px 0px 8px 0px;
+ margin: 18px 0px 2px 0px;
 }
 .rvps36
+{
+ margin: 22px 0px 6px 0px;
+}
+.rvps37
+{
+ margin: 4px 0px 6px 0px;
+}
+.rvps38
+{
+ margin: 4px 0px 8px 0px;
+}
+.rvps39
 {
  margin: 10px 0px 8px 0px;
 }
