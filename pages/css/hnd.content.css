@@ -609,9 +609,13 @@ p,ul,ol /* Paragraph Style */
 }
 .rvps38
 {
- margin: 4px 0px 8px 0px;
+ margin: 10px 0px 2px 0px;
 }
 .rvps39
+{
+ margin: 4px 0px 8px 0px;
+}
+.rvps40
 {
  margin: 10px 0px 8px 0px;
 }
