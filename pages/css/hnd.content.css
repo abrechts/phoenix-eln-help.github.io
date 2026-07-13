@@ -295,11 +295,8 @@ span.rvts42
 }
 span.rvts43
 {
- font-size: 11pt;
+ font-size: 12pt;
  font-family: 'Segoe UI';
- font-style: italic;
- font-weight: bold;
- color: #3f3f3f;
 }
 span.rvts44
 {
@@ -589,33 +586,53 @@ p,ul,ol /* Paragraph Style */
 }
 .rvps33
 {
- margin: 8px 0px 8px 0px;
+ margin: 10px 0px 4px 0px;
 }
 .rvps34
 {
- margin: 2px 0px 6px 0px;
+ margin: 6px 0px 2px 0px;
 }
 .rvps35
 {
- margin: 18px 0px 2px 0px;
+ margin: 4px 0px 6px 0px;
 }
 .rvps36
 {
- margin: 22px 0px 6px 0px;
+ margin: 14px 0px 6px 0px;
 }
 .rvps37
 {
- margin: 4px 0px 6px 0px;
+ margin: 4px 0px 4px 0px;
 }
 .rvps38
 {
- margin: 10px 0px 2px 0px;
+ margin: 8px 0px 4px 0px;
 }
 .rvps39
 {
- margin: 4px 0px 8px 0px;
+ margin: 8px 0px 8px 0px;
 }
 .rvps40
+{
+ margin: 2px 0px 6px 0px;
+}
+.rvps41
+{
+ margin: 18px 0px 2px 0px;
+}
+.rvps42
+{
+ margin: 22px 0px 6px 0px;
+}
+.rvps43
+{
+ margin: 16px 0px 2px 0px;
+}
+.rvps44
+{
+ margin: 4px 0px 8px 0px;
+}
+.rvps45
 {
  margin: 10px 0px 8px 0px;
 }

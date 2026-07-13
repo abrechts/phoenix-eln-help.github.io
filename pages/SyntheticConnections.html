@@ -195,34 +195,42 @@
             <div class="main-content">
                 
 <hr style="height : 1px; background-color : #000000; border-style : none;">
-<p class="rvps18"><span class="rvts15">General</span></p>
-<p class="rvps7"><span class="rvts39">The</span><span class="rvts40"> Synthetic Connections</span><span class="rvts8"> overview identifies and visually maps the entire network of synthetic pathways leading to, and originating from the reaction of the experiment currently displayed in the ELN. In the image below, the step of the current experiment, i.e. the reference step, is marked by a </span><span class="rvts42">➤</span><span class="rvts8"> symbol.</span></p>
-<p class="rvps29"><span class="rvts8">&nbsp; </span><img alt="" style="width : 645px; height : 420px; padding : 1px;" src="lib/SynthConnDlg.jpg"><span class="rvts8"> &nbsp; &nbsp;</span></p>
-<p class="rvps30"><span class="rvts8">This overview is accessible from the button located at the bottom right corner of the current reaction sketch:</span></p>
-<p class="rvps30"><span class="rvts8">&nbsp;</span><img alt="" style="width : 227px; height : 92px; padding : 1px;" src="lib/Connections_Button.png"></p>
-<p class="rvps18"><span class="rvts15">Database Selection</span></p>
-<p class="rvps24"><span class="rvts8">Synthetic context can be analyzed either based on the experiments database stored locally on your computer (</span><span class="rvts43">local database</span><span class="rvts8">), or based on the experiments of all users of your group or organization, as stored on the optional in-house ELN server (</span><span class="rvts43">server database</span><span class="rvts8">). This search context can be chosen from the Database dropdown menu. Note that when in server database mode, all experiments of all users are utilized for building the synthetic routes, but only the </span><span class="rvts30">finalized</span><span class="rvts8"> ones are accessible for examination, as the unfinalized ones are considered work in progress.</span></p>
-<p class="rvps29"><span class="rvts8">&nbsp; &nbsp;</span><img alt="" style="width : 128px; height : 92px; padding : 1px;" src="lib/DatabaseSelection.png"></p>
-<p class="rvps18"><span class="rvts15">Overview Structure</span></p>
-<p class="rvps24"><span class="rvts8">The resulting synthetic routes are summarized in a </span><span class="rvts43">flow diagram</span><span class="rvts8"> outlining the sequences of steps leading to and starting from the current experiment (upper section of overview image). Each sequence box represents a unique series of synthetic steps. Selecting a specific sequence presents its synthetic step sequence in the lower section of the overview.</span></p>
-<p class="rvps7"><span class="rvts8">The </span><span class="rvts43">step arrows</span><span class="rvts8"> reveal the available highest yield of the experiments the step represents. Clicking a step arrow lists these experiments in the right side panel. The </span><span class="rvts42">➤</span><span class="rvts8"> symbol in front of the step title marks the references step the overview.</span></p>
-<p class="rvps7"><span class="rvts8">Clicking an </span><span class="rvts43">experiment</span><span class="rvts8"> of this list opens it in the background within the ELN. Please note that this does </span><span class="rvts17">not</span><span class="rvts8"> change the current reference step the overview is based on. As mentioned before, when in </span><span class="rvts17">Server Database</span><span class="rvts8"> mode, only </span><span class="rvts30">finalized</span><span class="rvts8"> experiments of users can be accessed, since unfinalized ones are considered work in progress.</span></p>
-<p class="rvps32"><span class="rvts15">Definitions</span></p>
-<p class="rvps10"><span class="rvts8">A </span><span class="rvts44">sequence</span><span class="rvts8"> is defined as a </span><span class="rvts17">unique</span><span class="rvts8"> block of subsequent synthetic steps.&nbsp;</span></p>
+<p class="rvps18"><span class="rvts15">Introduction</span></p>
+<p class="rvps7"><span class="rvts40">Phoenix ELN</span><span class="rvts8"> allows to visually map all synthetic pathways leading to and originating from the reaction of the current experiment, based on the analysis of all available ELN experiments - either your own local ones, or the experiments of all users within your organization (via an optional in-house </span><a class="rvts14" href="ELNServer.html">ELN server database</a><span class="rvts8">). Since the complexity of possible connections increases with accumulating number of experiments, mathematical graph theory is utilized to handle also complex scenarios.</span></p>
+<p class="rvps34"><span class="rvts8">There are two connection graph types available, both accessible from the bottom right corner of the reaction sketch area in the experiment protocol:</span></p>
+<p class="rvps35"><img alt="" style="width : 103px; height : 48px; padding : 1px;" src="lib/Conn_Buttons.png"></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps3 noindent"><span class="rvts8">A sequence will be </span><span class="rvts43">split</span><span class="rvts8"> into multiple downstream sequences if they utilize its final product as their common starting material.</span></li>
- <li class="rvps3 noindent"><span class="rvts8">Upstream sequences, i.e. the ones leading to the reference experiment, are assigned negative numbers, e.g. 'Sequence -3'.&nbsp;</span></li>
- <li class="rvps3 noindent"><span class="rvts8">Sequence titles are generated dynamically, based on the experiments currently available for analysis. These titles therefore are not suited for use as static references.</span></li>
+ <li class="rvps33 noindent"><span class="rvts28">Synthetic Connections</span><span class="rvts8"> (left button) represents a connection graph based on sequences. This abstraction allows the display of complex connection networks in a condensed and interactive manner.&nbsp;</span></li>
+ <li class="rvps30 noindent"><span class="rvts28">Scheme Connections</span><span class="rvts8"> (right button) represents the synthetic connections based on chemical structures instead of sequences. As this can be space demanding, this graph is displayed in full screen mode.</span></li>
 </ul>
-<p class="rvps10"><span class="rvts8">A synthetic </span><span class="rvts44">step</span><span class="rvts29"> </span><span class="rvts8">summarizes all experiments referring to the same chemical conversion.&nbsp;</span></p>
+<p class="rvps5"><span class="rvts15">Sequence Connections</span></p>
+<p class="rvps7"><span class="rvts8">Click the marked button to access this analysis type:</span></p>
+<p class="rvps7"><span class="rvts8">&nbsp;</span><img alt="" style="width : 87px; height : 49px; padding : 1px;" src="lib/Conn_btnSequenceGraph.png"></p>
+<p class="rvps35"><span class="rvts8">As the connections graph originates from the reaction of the current experiment, its sequence box as well as the its synthetic step (the lower window part) are marked by a </span><span class="rvts42">➤</span><span class="rvts8"> symbol. Additionally, the resulting start sequence is color coded accordingly.</span></p>
+<p class="rvps28"><span class="rvts8">&nbsp;</span><img alt="" style="width : 735px; height : 487px; padding : 1px;" src="lib/Conn_FullWindow2.png"></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps3 noindent"><span class="rvts8">The </span><span class="rvts17">reference</span><span class="rvts8"> step, i.e. the one representing the current experiment, is marked by a </span><span class="rvts42">➤</span><span class="rvts8"> symbol.&nbsp;</span></li>
- <li class="rvps3 noindent"><span class="rvts8">Clicking the blue </span><span class="rvts17">Reference Step</span><span class="rvts8"> link in the info text at the top of the overview always brings the view back to to this step.</span></li>
- <li class="rvps3 noindent"><span class="rvts8">Step numbers are generated dynamically, based on the experiments currently available for analysis. These step numbers therefore are not suited for use as static references.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Each </span><span class="rvts13">sequence box</span><span class="rvts8"> in the upper part of the window represents a unique succession of synthetic steps. Clicking one reveals the individual steps it represents in the lower window section.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Clicking a </span><span class="rvts13">step arrow</span><span class="rvts8"> shows all associated experiments in the right-side panel, sorted by yield.&nbsp;</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Clicking one of the listed </span><span class="rvts13">experiments</span><span class="rvts8"> opens it in the protocol area, for examination of its contents. Note that only </span><span class="rvts17">finalized</span><span class="rvts8"> server experiments are enabled for examination, unfinalized ones are considered work in progress. All experiments are enabled, however, when working with your local database.</span></li>
 </ul>
-<p class="rvps32"><span class="rvts15">Limitation</span></p>
-<p class="rvps10"><span class="rvts8">The step sequence schemes currently ignore attached component structure properties such as </span><span class="rvts17">rac</span><span class="rvts8">, </span><span class="rvts17">mix</span><span class="rvts8">, </span><span class="rvts17">mon, </span><span class="rvts8">etc., as assigned by component brackets in the drawing tool. Structures with attached properties therefore are treated the same as their underlying structures without these properties.</span></p>
-<p class="rvps3"><span class="rvts8"></span><span class="rvts8"></span></p>
+<p class="rvps7"><span class="rvts8">This analysis can be toggled to run either on your own local experiments, or on the experiments of all ELN users stored in an optional in‑house server database:</span></p>
+<p class="rvps38"><span class="rvts43">&nbsp; </span><img alt="" style="width : 108px; height : 80px; padding : 1px;" src="lib/Conn_DatabaseSelection.png"></p>
+<p class="rvps37"><span class="rvts8">The sequence boxes are color-coded to indicate their role in the connection graph. Hovering the mouse pointer over the sequence title in the steps area (lower window section) informs about their specific role:</span></p>
+<p class="rvps10"><span class="rvts43">&nbsp; </span><img alt="" style="width : 241px; height : 95px; padding : 1px;" src="lib/Conn_LabelInfo.png"></p>
+<p class="rvps10"><span class="rvts8">The </span><span class="rvts13">merge point</span><span class="rvts8"> is a special graph element representing a common intermediate resulting from multiple incoming sequences and consumed by multiple outgoing sequences.&nbsp;</span></p>
+<p class="rvps30"><span class="rvts43">&nbsp; </span><img alt="" style="width : 284px; height : 91px; padding : 1px;" src="lib/Conn_Connector.png"></p>
+<p class="rvps18"><a name="StructureGraph"></a><span class="rvts15">Structure Graph</span></p>
+<p class="rvps24"><span class="rvts8">The </span><span class="rvts17">Structure Graph</span><span class="rvts8"> constructs the same network as above, but based on molecular structures instead of sequences.&nbsp;</span></p>
+<p class="rvps7"><img alt="" style="width : 81px; height : 47px; padding : 1px;" src="lib/Conn_btnSchemeGraph.png"></p>
+<p class="rvps7"><span class="rvts8">Clicking the </span><span class="rvts17">Structure Graph</span><span class="rvts8"> button opens this space demanding graph type in full screen mode. Its step numbers are assigned per underlying sequence, so they are not unique in the overall scheme.</span></p>
+<p class="rvps10"><img alt="" style="width : 856px; height : 378px; padding : 1px;" src="lib/Conn_SequenceSchemes.png"></p>
+<p class="rvps7"><span class="rvts8">The controls in the top right screen corner let you toggle between local and server database (if present), export the graph to PDF (landscape mode), and to change the magnification level:</span></p>
+<p class="rvps7"><img alt="" style="width : 165px; height : 41px; padding : 1px;" src="lib/Conn_SchemeControls.png"></p>
+<p class="rvps24"><span class="rvts8"><br/></span></p>
+<p class="rvps18"><span class="rvts16"><br/></span></p>
+<p class="rvps36"><span class="rvts8"><br/></span></p>
+<p class="rvps32"><span class="rvts16"><br/></span></p>
+<p class="rvps32"><span class="rvts16"></span><span class="rvts16"></span></p>
 
             </div>
             
