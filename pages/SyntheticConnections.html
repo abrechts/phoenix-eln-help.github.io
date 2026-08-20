@@ -183,7 +183,7 @@
                         
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="MaterialsDatabase.html" title="Materials Database" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ReactionSearches.html" title="Reaction Searches" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Full-TextSearch.html" title="Full-Text Search" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ELNDataMigration.html" title="ELN Data Migration" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -196,17 +196,17 @@
                 
 <hr style="height : 1px; background-color : #000000; border-style : none;">
 <p class="rvps18"><span class="rvts15">Introduction</span></p>
-<p class="rvps7"><span class="rvts40">Phoenix ELN</span><span class="rvts8"> allows to visually map all synthetic pathways leading to and originating from the reaction of the current experiment, based on the analysis of all available ELN experiments - either your own local ones, or the experiments of all users within your organization (via an optional in-house </span><a class="rvts14" href="ELNServer.html">ELN server database</a><span class="rvts8">). Since the complexity of possible connections increases with accumulating number of experiments, mathematical graph theory is utilized to handle also complex scenarios.</span></p>
-<p class="rvps34"><span class="rvts8">There are two connection graph types available, both accessible from the bottom right corner of the reaction sketch area in the experiment protocol:</span></p>
-<p class="rvps35"><img alt="" style="width : 103px; height : 48px; padding : 1px;" src="lib/Conn_Buttons.png"></p>
+<p class="rvps7"><span class="rvts63">Phoenix ELN</span><span class="rvts8"> allows to visually map all synthetic pathways leading to and originating from the reaction of the current experiment, based on the analysis of all available ELN experiments - either your own local ones, or the experiments of all users within your organization (via an optional in-house </span><a class="rvts14" href="ELNServer.html">ELN server database</a><span class="rvts8">). Since the complexity of possible connections increases with accumulating number of experiments, mathematical graph theory is utilized to handle also complex scenarios.</span></p>
+<p class="rvps45"><span class="rvts8">There are two connection graph types available, both accessible from the bottom right corner of the reaction sketch area in the experiment protocol:</span></p>
+<p class="rvps34"><img alt="" style="width : 103px; height : 48px; padding : 1px;" src="lib/Conn_Buttons.png"></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps33 noindent"><span class="rvts28">Synthetic Connections</span><span class="rvts8"> (left button) represents a connection graph based on sequences. This abstraction allows the display of complex connection networks in a condensed and interactive manner.&nbsp;</span></li>
+ <li class="rvps44 noindent"><span class="rvts28">Synthetic Connections</span><span class="rvts8"> (left button) represents a connection graph based on sequences. This abstraction allows the display of complex connection networks in a condensed and interactive manner.&nbsp;</span></li>
  <li class="rvps30 noindent"><span class="rvts28">Scheme Connections</span><span class="rvts8"> (right button) represents the synthetic connections based on chemical structures instead of sequences. As this can be space demanding, this graph is displayed in full screen mode.</span></li>
 </ul>
 <p class="rvps5"><span class="rvts15">Sequence Connections</span></p>
 <p class="rvps7"><span class="rvts8">Click the marked button to access this analysis type:</span></p>
 <p class="rvps7"><span class="rvts8">&nbsp;</span><img alt="" style="width : 87px; height : 49px; padding : 1px;" src="lib/Conn_btnSequenceGraph.png"></p>
-<p class="rvps35"><span class="rvts8">As the connections graph originates from the reaction of the current experiment, its sequence box as well as the its synthetic step (the lower window part) are marked by a </span><span class="rvts42">➤</span><span class="rvts8"> symbol. Additionally, the resulting start sequence is color coded accordingly.</span></p>
+<p class="rvps34"><span class="rvts8">As the connections graph originates from the reaction of the current experiment, its sequence box as well as the its synthetic step (the lower window part) are marked by a </span><span class="rvts65">➤</span><span class="rvts8"> symbol. Additionally, the resulting start sequence is color coded accordingly.</span></p>
 <p class="rvps28"><span class="rvts8">&nbsp;</span><img alt="" style="width : 735px; height : 487px; padding : 1px;" src="lib/Conn_FullWindow2.png"></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps10 noindent"><span class="rvts8">Each </span><span class="rvts13">sequence box</span><span class="rvts8"> in the upper part of the window represents a unique succession of synthetic steps. Clicking one reveals the individual steps it represents in the lower window section.</span></li>
@@ -214,11 +214,11 @@
  <li class="rvps10 noindent"><span class="rvts8">Clicking one of the listed </span><span class="rvts13">experiments</span><span class="rvts8"> opens it in the protocol area, for examination of its contents. Note that only </span><span class="rvts17">finalized</span><span class="rvts8"> server experiments are enabled for examination, unfinalized ones are considered work in progress. All experiments are enabled, however, when working with your local database.</span></li>
 </ul>
 <p class="rvps7"><span class="rvts8">This analysis can be toggled to run either on your own local experiments, or on the experiments of all ELN users stored in an optional in‑house server database:</span></p>
-<p class="rvps38"><span class="rvts43">&nbsp; </span><img alt="" style="width : 108px; height : 80px; padding : 1px;" src="lib/Conn_DatabaseSelection.png"></p>
-<p class="rvps37"><span class="rvts8">The sequence boxes are color-coded to indicate their role in the connection graph. Hovering the mouse pointer over the sequence title in the steps area (lower window section) informs about their specific role:</span></p>
-<p class="rvps10"><span class="rvts43">&nbsp; </span><img alt="" style="width : 241px; height : 95px; padding : 1px;" src="lib/Conn_LabelInfo.png"></p>
+<p class="rvps47"><span class="rvts66">&nbsp; </span><img alt="" style="width : 108px; height : 80px; padding : 1px;" src="lib/Conn_DatabaseSelection.png"></p>
+<p class="rvps46"><span class="rvts8">The sequence boxes are color-coded to indicate their role in the connection graph. Hovering the mouse pointer over the sequence title in the steps area (lower window section) informs about their specific role:</span></p>
+<p class="rvps10"><span class="rvts66">&nbsp; </span><img alt="" style="width : 241px; height : 95px; padding : 1px;" src="lib/Conn_LabelInfo.png"></p>
 <p class="rvps10"><span class="rvts8">The </span><span class="rvts13">merge point</span><span class="rvts8"> is a special graph element representing a common intermediate resulting from multiple incoming sequences and consumed by multiple outgoing sequences.&nbsp;</span></p>
-<p class="rvps30"><span class="rvts43">&nbsp; </span><img alt="" style="width : 284px; height : 91px; padding : 1px;" src="lib/Conn_Connector.png"></p>
+<p class="rvps30"><span class="rvts66">&nbsp; </span><img alt="" style="width : 284px; height : 91px; padding : 1px;" src="lib/Conn_Connector.png"></p>
 <p class="rvps18"><a name="StructureGraph"></a><span class="rvts15">Structure Graph</span></p>
 <p class="rvps24"><span class="rvts8">The </span><span class="rvts17">Structure Graph</span><span class="rvts8"> constructs the same network as above, but based on molecular structures instead of sequences.&nbsp;</span></p>
 <p class="rvps7"><img alt="" style="width : 81px; height : 47px; padding : 1px;" src="lib/Conn_btnSchemeGraph.png"></p>
@@ -228,9 +228,9 @@
 <p class="rvps7"><img alt="" style="width : 165px; height : 41px; padding : 1px;" src="lib/Conn_SchemeControls.png"></p>
 <p class="rvps24"><span class="rvts8"><br/></span></p>
 <p class="rvps18"><span class="rvts16"><br/></span></p>
-<p class="rvps36"><span class="rvts8"><br/></span></p>
-<p class="rvps32"><span class="rvts16"><br/></span></p>
-<p class="rvps32"><span class="rvts16"></span><span class="rvts16"></span></p>
+<p class="rvps32"><span class="rvts8"><br/></span></p>
+<p class="rvps43"><span class="rvts16"><br/></span></p>
+<p class="rvps43"><span class="rvts16"></span><span class="rvts16"></span></p>
 
             </div>
             
