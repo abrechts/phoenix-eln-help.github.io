@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
-  <title>Reaction Search</title>
+  <title>Substructure Search</title>
   <meta name="description" content="" /> 
   <meta name="keywords" content="">
 
@@ -22,11 +22,11 @@
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Reaction Search">
+  <meta name="twitter:title" content="Substructure Search">
   <meta name="twitter:description" content="">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="Reaction Search" />
+  <meta property="og:title" content="Substructure Search" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="Phoenix ELN Help" /> 
@@ -173,9 +173,9 @@
 
     <article>
         <div id="topic-content" class="container-fluid" 
-		  data-hnd-id="ReactionSearch"
+		  data-hnd-id="SubstructureSearch"
 		  data-hnd-context="3"
-		  data-hnd-title="Reaction Search"
+		  data-hnd-title="Substructure Search"
 		>
             
                 <div class="navigation">
@@ -190,21 +190,24 @@
 
             <a id="main-content"></a>
 
-            <h2>Reaction Search</h2>
+            <h2>Substructure Search</h2>
 
             <div class="main-content">
                 
 <hr style="height : 1px; background-color : #000000; border-style : none;">
-<p class="rvps3"><span class="rvts8">&nbsp;</span><img alt="" style="width : 167px; height : 58px; padding : 1px;" src="lib/Search_Toolbar.png"></p>
-<p class="rvps22"><span class="rvts15">Reaction Substructure Searches</span></p>
-<p class="rvps24"><span class="rvts8">A reaction substructure search lets you find experiments involving a specific reaction, say the reduction of an aldehyde to a primary alcohol, as an example. The search is initiated by drawing a reaction sketch containing only of the smallest possible fragments of reactant and product which actually do change during the reaction. To increase the selectivity of the query, relevant substituents surrounding the reactive centers may additionally be specified, if required.</span></p>
 <p class="rvps22"><span class="rvts15">The Substructure Search Dialog</span></p>
 <p class="rvps37"><span class="rvts8">This dialog is accessible from the </span><span class="rvts17">main toolbar</span><span class="rvts8">:</span></p>
-<p class="rvps41"><span class="rvts61">Search → Substructure Search ...</span></p>
-<p class="rvps37"><span class="rvts8">Suppose we want to find all experiments in which an aldehyde is reduced to an alcohol. To begin, click the </span><span class="rvts17">Search</span><span class="rvts8"> button in the main toolbar, which opens the </span><span class="rvts29">Substructure Search</span><span class="rvts8"> dialog:</span></p>
-<p class="rvps30"><img alt="" style="width : 755px; height : 272px; padding : 1px;" src="lib/RSSQuery_Dialog_Labels.png"></p>
+<p class="rvps41"><span class="rvts61">Search → Substructures ...</span></p>
+<p class="rvps10"><span class="rvts31">There are two substructure search types available, which differ in the way the query reaction sketch is drawn:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3 noindent"><a class="rvts14" href="SubstructureSearch.html#RSS_Search">Reaction Substructure Search (RSS)</a><span class="rvts31">: This powerful search type lets you find specific </span><span class="rvts62">reactions</span><span class="rvts31"> (see below).&nbsp;</span><br/><span class="rvts31">Its query sketch is of the form "</span><span class="rvts34">A -&gt; B"</span><span class="rvts31">.</span></li>
+ <li class="rvps3 noindent"><a class="rvts14" href="SubstructureSearch.html#CSS_Search">Component Substructure Search (CSS)</a><span class="rvts31">: Lets you find matching </span><span class="rvts62">structures</span><span class="rvts31"> of reference reactants and products.</span><br/><span class="rvts31">The query sketch is a partial reaction sketch of the form "</span><span class="rvts34">A -&gt;"</span><span class="rvts31"> (reactant substructure) and "</span><span class="rvts34">-&gt; B"</span><span class="rvts31"> (product substructure).</span></li>
+</ul>
+<p class="rvps22"><a name="RSS_Search"></a><span class="rvts15">1) Reaction Substructure Search (RSS)</span></p>
+<p class="rvps24"><span class="rvts8">A reaction substructure search lets you find experiments involving a specific reaction. The search is initiated by drawing a reaction sketch containing only of the smallest possible fragments of reactant and product which actually do change during the reaction. To increase the selectivity of the query, relevant substituents surrounding the reactive centers may additionally be specified, if required.</span></p>
+<p class="rvps29"><img alt="" style="width : 668px; height : 264px; padding : 1px;" src="lib/SubstructureQuery_Dialog.png"></p>
 <p class="rvps22"><span class="rvts15">Reaction Substructure Sketch </span><span class="rvts59">❶</span></p>
-<p class="rvps11"><span class="rvts8">Click anywhere inside the reaction sketch area</span><span class="rvts50"> </span><span class="rvts8">to edit the desired substructure sketch in the appearing drawing editor. In above example, the reduction of an aldehyde to a primary alcohol already was entered. Note the explicit hydrogen bonds present in the product, which exclude e.g. the formation of an ether or of a secondary alcohol.</span></p>
+<p class="rvps37"><span class="rvts8">Suppose we want to find all experiments in which an aldehyde is converted to an alcohol. To start, click anywhere inside the reaction sketch area</span><span class="rvts50"> </span><span class="rvts8">to edit the desired substructure sketch in the appearing drawing editor, as shown above after returning from the editor. Note the explicit hydrogen bonds present in the product, which exclude e.g. the formation of an ether or of a secondary alcohol.</span></p>
 <p class="rvps3"><span class="rvts8">In </span><span class="rvts17">Phoenix ELN</span><span class="rvts8"> substructure queries, </span><span class="rvts47">explicit hydrogens</span><span class="rvts8"> are essential for restricting the results to what you actually want. The rule is, that </span><span class="rvts17">no</span><span class="rvts8"> specified substituent means that </span><span class="rvts17">any</span><span class="rvts8"> substituent is allowed for a match. The illustration below explains the role of explicit hydrogens in more detail:</span></p>
 <p class="rvps16"><img alt="" style="width : 362px; height : 239px; padding : 1px;" src="lib/ExplicitBond_Table.jpg"></p>
 <p class="rvps24"><span class="rvts8">Another aspect to keep in mind is </span><span class="rvts29">aromaticity</span><span class="rvts8">. If you want your query to match a reaction occurring in an </span><span class="rvts17">aromatic</span><span class="rvts8"> system, your query sketch also must represent an aromatic system - and vice versa. This means that e.g. reactions involving the aromatic reaction centers below &nbsp;...&nbsp;</span></p>
@@ -215,9 +218,13 @@
 <p class="rvps34"><span class="rvts8">In addition, following restrictions apply:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <li class="rvps16 noindent"><span class="rvts29">Stereochemistry</span><span class="rvts8"> and </span><span class="rvts29">cis/trans</span><span class="rvts8"> geometries currently are ignored in queries.&nbsp;</span></li>
- <li class="rvps3 noindent"><span class="rvts8">Only the </span><span class="rvts29">reference</span><span class="rvts8"> reactant and the </span><span class="rvts29">reference</span><span class="rvts8"> product are considered in queries.</span></li>
+ <li class="rvps3 noindent"><span class="rvts8">Only the </span><span class="rvts29">reference</span><span class="rvts8"> reactant and the </span><span class="rvts29">reference</span><span class="rvts8"> product are considered in queries.</span><br/><span class="rvts8"><br/></span></li>
 </ul>
-<p class="rvps39"><span class="rvts15">Search Results </span><span class="rvts59">❷</span></p>
+<p class="rvps22"><a name="CSS_Search"></a><span class="rvts15">2) Component Substructure Search (CSS)</span></p>
+<p class="rvps24"><span class="rvts8">This search type identifies all reactants or products that match a specified structural fragment. Sketch area </span><span class="rvts41">❶</span><span class="rvts8">: Draw the fragment and place a reaction arrow either to its left (</span><span class="rvts29">→ A</span><span class="rvts8">) or to its right (</span><span class="rvts29">A →</span><span class="rvts8">) to indicate whether the fragment should be matched as a reactant or as a product. The example below illustrates a reactant‑based query that returns all experiments featuring a reactant containing the chosen structural fragment.</span></p>
+<p class="rvps42"><span class="rvts15">&nbsp;</span><img alt="" style="width : 148px; height : 108px; padding : 1px;" src="lib/Reactant_Query.png"></p>
+<p class="rvps3"><span class="rvts8">Above RSS substructure sketch rules also apply for the single component structure fragment. Of course, you can also search for a full component structures. Only </span><span class="rvts17">reference</span><span class="rvts8"> reactants and </span><span class="rvts17">reference</span><span class="rvts8"> products can be searched. This means that additional reactants and side products possibly present in an experiment reaction sketch are ignored.</span></p>
+<p class="rvps39"><span class="rvts15">3) Search Results </span><span class="rvts59">❷</span></p>
 <p class="rvps3"><span class="rvts8">After entering the substructure sketch, the </span><span class="rvts17">Results</span><span class="rvts8"> panel immediately updates to combine all matching experiments into distinct groups sharing the same reaction, sorted by yield or scale, depending on the selected sort type </span><span class="rvts41">❸</span><span class="rvts60">. </span><span class="rvts8">Note that only </span><span class="rvts29">finalized</span><span class="rvts8"> experiments are listed in the search results, since unfinalized ones are considered work in progress.</span></p>
 <p class="rvps21"><img alt="" style="width : 605px; height : 282px; padding : 1px;" src="lib/RSS_Results.png"></p>
 <p class="rvps24"><span class="rvts8">Click the</span><span class="rvts29"> info link</span><span class="rvts8"> </span><img alt="" style="width : 14px; height : 14px; padding : 1px;" src="lib/RSS_InfoLink%201.png"><span class="rvts8"> on top of a reaction arrow to open the </span><a class="rvts14" href="SyntheticConnections.html">Synthetic Connections</a><span class="rvts8"> graph, which reveals all currently available synthetic pathways leading to and away from this step. This context information substantially increases the scope and utility of the search results.</span></p>
