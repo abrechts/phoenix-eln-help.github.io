@@ -327,43 +327,76 @@ span.rvts47
 }
 span.rvts48
 {
- font-size: 12pt;
+ font-size: 11pt;
  font-family: 'Segoe UI';
  font-weight: bold;
- color: #3333ff;
 }
 span.rvts49
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
- font-weight: bold;
+ font-style: italic;
 }
 span.rvts50
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ font-style: italic;
+ font-weight: bold;
+ color: #3f3f3f;
+}
+span.rvts51
+{
+ font-family: 'Segoe UI';
+ font-weight: bold;
+ color: #333333;
+ background-color: #e5e5e5;
+}
+span.rvts52
+{
+ font-size: 12pt;
+ font-family: 'Segoe UI';
+}
+a.rvts53, span.rvts53
+{
+ font-size: 12pt;
+ font-family: 'Segoe UI';
+ color: #0000ff;
+ text-decoration: underline;
+}
+span.rvts54
+{
+ font-size: 12pt;
+ font-family: 'Segoe UI';
+ font-weight: bold;
+ color: #3333ff;
+}
+span.rvts55
 {
  font-size: 14pt;
  font-family: 'Segoe UI';
 }
-span.rvts51
+span.rvts56
 {
  font-size: 14pt;
  font-family: 'Segoe UI';
  font-weight: bold;
  color: #ff0000;
 }
-span.rvts52
+span.rvts57
 {
  font-size: 9pt;
  font-family: 'Cascadia Mono';
  color: #000000;
 }
-span.rvts53
+span.rvts58
 {
  font-size: 11pt;
  font-family: 'Google Sans';
  color: #0a0a0a;
  background-color: #ffffff;
 }
-span.rvts54
+span.rvts59
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
@@ -371,113 +404,95 @@ span.rvts54
  color: #0000ff;
  background-color: #ffffff;
 }
-span.rvts55
+span.rvts60
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
  color: #0000ff;
 }
-span.rvts56
+span.rvts61
 {
  font-size: 14pt;
  font-family: 'Segoe UI';
  color: #ff0000;
 }
-span.rvts57
+span.rvts62
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
  color: #0a0a0a;
  background-color: #ffffff;
 }
-span.rvts58
+span.rvts63
 {
  font-size: 12pt;
  font-family: 'Segoe UI';
  font-weight: bold;
  color: #000000;
 }
-span.rvts59
+span.rvts64
 {
  font-family: 'Segoe UI';
  font-weight: bold;
  color: #ff0000;
 }
-span.rvts60
-{
- font-family: 'Segoe UI';
-}
-span.rvts61
-{
- font-family: 'Segoe UI';
- font-weight: bold;
- color: #333333;
- background-color: #e5e5e5;
-}
-span.rvts62
-{
- font-size: 11pt;
- font-family: 'Segoe UI';
- font-style: italic;
- color: #333333;
-}
-span.rvts63
-{
- font-size: 11pt;
- font-family: 'Segoe UI';
-}
-span.rvts64
-{
- font-size: 11pt;
- font-family: 'Segoe UI';
- font-style: italic;
-}
 span.rvts65
 {
- font-size: 11pt;
  font-family: 'Segoe UI';
- background-color: #e5e5e5;
 }
 span.rvts66
 {
- font-size: 9.5pt;
- font-family: 'Cascadia Mono';
- color: #000000;
- background-color: #ffffff;
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ font-style: italic;
+ color: #333333;
 }
 span.rvts67
 {
- font-size: 12pt;
+ font-size: 11pt;
  font-family: 'Segoe UI';
 }
 span.rvts68
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
- color: #000000;
+ background-color: #e5e5e5;
 }
 span.rvts69
 {
- font-size: 11pt;
- font-family: 'Segoe UI';
- font-weight: bold;
+ font-size: 9.5pt;
+ font-family: 'Cascadia Mono';
  color: #000000;
+ background-color: #ffffff;
 }
 span.rvts70
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
  color: #000000;
- text-decoration: underline;
 }
 span.rvts71
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts72
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ color: #000000;
+ text-decoration: underline;
+}
+span.rvts73
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
  font-style: italic;
  color: #000000;
 }
-span.rvts72
+span.rvts74
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
@@ -642,57 +657,65 @@ p,ul,ol /* Paragraph Style */
 }
 .rvps36
 {
- margin: 8px 0px 8px 0px;
+ margin: 18px 0px 4px 0px;
 }
 .rvps37
 {
- margin: 2px 0px 6px 0px;
+ margin: 8px 0px 14px 0px;
 }
 .rvps38
 {
- margin: 18px 0px 2px 0px;
+ margin: 8px 0px 8px 0px;
 }
 .rvps39
 {
- margin: 22px 0px 6px 0px;
+ margin: 2px 0px 6px 0px;
 }
 .rvps40
 {
- margin: 16px 0px 2px 0px;
+ margin: 18px 0px 2px 0px;
 }
 .rvps41
 {
- margin: 2px 0px 10px 0px;
+ margin: 22px 0px 6px 0px;
 }
 .rvps42
 {
- margin: 6px 0px 6px 0px;
+ margin: 16px 0px 2px 0px;
 }
 .rvps43
 {
- margin: 14px 0px 0px 0px;
+ margin: 2px 0px 10px 0px;
 }
 .rvps44
 {
- margin: 14px 0px 0px 0px;
+ margin: 6px 0px 6px 0px;
 }
 .rvps45
 {
- margin: 10px 0px 4px 0px;
+ margin: 14px 0px 0px 0px;
 }
 .rvps46
 {
- margin: 6px 0px 2px 0px;
+ margin: 14px 0px 0px 0px;
 }
 .rvps47
 {
- margin: 4px 0px 4px 0px;
+ margin: 10px 0px 4px 0px;
 }
 .rvps48
 {
- margin: 8px 0px 4px 0px;
+ margin: 6px 0px 2px 0px;
 }
 .rvps49
+{
+ margin: 4px 0px 4px 0px;
+}
+.rvps50
+{
+ margin: 8px 0px 4px 0px;
+}
+.rvps51
 {
  margin: 10px 0px 8px 0px;
 }

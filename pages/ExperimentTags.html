@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
-  <title>Synthetic Connections</title>
+  <title>Experiment Tags</title>
   <meta name="description" content="" /> 
   <meta name="keywords" content="">
 
@@ -22,11 +22,11 @@
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Synthetic Connections">
+  <meta name="twitter:title" content="Experiment Tags">
   <meta name="twitter:description" content="">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="Synthetic Connections" />
+  <meta property="og:title" content="Experiment Tags" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="Phoenix ELN Help" /> 
@@ -173,9 +173,9 @@
 
     <article>
         <div id="topic-content" class="container-fluid" 
-		  data-hnd-id="SyntheticConnections"
-		  data-hnd-context="16"
-		  data-hnd-title="Synthetic Connections"
+		  data-hnd-id="ExperimentTags"
+		  data-hnd-context="25"
+		  data-hnd-title="Experiment Tags"
 		>
             
                 <div class="navigation">
@@ -183,54 +183,48 @@
                         
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ExperimentTagSearch.html" title="Experiment Tag Search" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ELNDataMigration.html" title="ELN Data Migration" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="SpellChecking.html" title="Spell Checking" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ReactionSearch.html" title="Substructure Search" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
 
             <a id="main-content"></a>
 
-            <h2>Synthetic Connections</h2>
+            <h2>Experiment Tags</h2>
 
             <div class="main-content">
                 
-<hr style="height : 1px; background-color : #000000; border-style : none;">
-<p class="rvps18"><span class="rvts15">Introduction</span></p>
-<p class="rvps7"><span class="rvts49">Phoenix ELN</span><span class="rvts8"> allows to visually map all synthetic pathways leading to and originating from the reaction of the current experiment, based on the analysis of all available ELN experiments - either your own local ones, or the experiments of all users within your organization (via an optional in-house </span><a class="rvts14" href="ELNServer.html">ELN server database</a><span class="rvts8">). Since the complexity of possible connections increases with accumulating number of experiments, mathematical graph theory is utilized to handle also complex scenarios.</span></p>
-<p class="rvps48"><span class="rvts8">There are two connection graph types available, both accessible from the bottom right corner of the reaction sketch area in the experiment protocol:</span></p>
-<p class="rvps34"><img alt="" style="width : 103px; height : 48px; padding : 1px;" src="lib/Conn_Buttons.png"></p>
+<p class="rvps18"><span class="rvts15">General</span></p>
+<p class="rvps3"><span class="rvts8">Experiment tags are searchable keywords you can attach to experiments. </span><span class="rvts17">Phoenix ELN</span><span class="rvts8"> lets you manage your own set of reusable tags.</span></p>
+<p class="rvps22"><span class="rvts15">The Human Factor</span></p>
+<p class="rvps24"><span class="rvts8">Precautions have been taken</span><span class="rvts17"> in Phoenix</span><span class="rvts8"> </span><span class="rvts17">ELN</span><span class="rvts8"> to avoid common pitfalls when working with tags. Still, the human factor cannot be eliminated entirely. The effectiveness of tag‑based searches depends on your discipline in consistently assigning tags to your experiments. This contrasts with </span><span class="rvts17">Substructure</span><span class="rvts8"> and </span><span class="rvts17">Full‑Text</span><span class="rvts8"> searches, which require no such user‑generated metadata. A reliable tag system requires:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps47 noindent"><span class="rvts28">Synthetic Connections</span><span class="rvts8"> (left button) represents a connection graph based on sequences. This abstraction allows the display of complex connection networks in a condensed and interactive manner.&nbsp;</span></li>
- <li class="rvps30 noindent"><span class="rvts28">Scheme Connections</span><span class="rvts8"> (right button) represents the synthetic connections based on chemical structures instead of sequences. As this can be space demanding, this graph is displayed in full screen mode.</span></li>
+ <li class="rvps15 noindent"><span class="rvts47">Persistence</span><span class="rvts8">: You need to be systematic and consistent in assigning tags. If you miss to attach tags to an experiment, it definitely won't be found by </span><a class="rvts14" href="ExperimentTagSearch.html">tag search</a><span class="rvts8">.&nbsp;</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3 noindent"><span class="rvts17">Phoenix ELN</span><span class="rvts8"> helps mitigate this by automatically carrying over tags from the source experiment when you clone or import it. This covers the common scenario of repeating experiments, for example during optimization work.</span></li>
+ </ul>
+ <li class="rvps10 noindent"><span class="rvts47">Consistency</span><span class="rvts8">: Tag search will miss experiments when multiple tags are utilized for the same thing (due to synonyms, typos, etc).&nbsp;</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3 noindent"><span class="rvts17">Phoenix ELN </span><span class="rvts8">addresses this by only letting you assign predefined custom tags. These propagate changes (rename, delete) to all experiments already referencing them, keeping them in sync.&nbsp;</span></li>
+ </ul>
 </ul>
-<p class="rvps5"><span class="rvts15">Sequence Connections</span></p>
-<p class="rvps7"><span class="rvts8">Click the marked button to access this analysis type:</span></p>
-<p class="rvps7"><span class="rvts8">&nbsp;</span><img alt="" style="width : 87px; height : 49px; padding : 1px;" src="lib/Conn_btnSequenceGraph.png"></p>
-<p class="rvps34"><span class="rvts8">As the connections graph originates from the reaction of the current experiment, its sequence box as well as the its synthetic step (the lower window part) are marked by a </span><span class="rvts69">➤</span><span class="rvts8"> symbol. Additionally, the resulting start sequence is color coded accordingly.</span></p>
-<p class="rvps28"><span class="rvts8">&nbsp;</span><img alt="" style="width : 735px; height : 487px; padding : 1px;" src="lib/Conn_FullWindow2.png"></p>
+<p class="rvps36"><span class="rvts15">Working with Tags</span></p>
+<p class="rvps10"><span class="rvts8">You can </span><span class="rvts45">add</span><span class="rvts8"> tags to an experiment by clicking the</span><span class="rvts38"> </span><span class="rvts45">[+]</span><span class="rvts29"> </span><span class="rvts45">button</span><span class="rvts8"> in the </span><span class="rvts17">Search Tags</span><span class="rvts8"> section of the experiment properties side panel. Each experiment can have up to </span><span class="rvts48">six</span><span class="rvts8"> tags.&nbsp;</span></p>
+<p class="rvps37"><span class="rvts8">&nbsp; &nbsp; &nbsp;</span><img alt="" style="width : 279px; height : 112px; padding : 1px;" src="lib/Tags_ExpInfo.png"></p>
+<p class="rvps14"><span class="rvts8">Clicking the </span><span class="rvts48">[+]</span><span class="rvts8"> button opens the </span><span class="rvts50">Manage Tags</span><span class="rvts8"> dialog, where you can:</span></p>
+<p class="rvps24"><span class="rvts8">&nbsp; &nbsp;</span><img alt="" style="width : 305px; height : 231px; padding : 1px;" src="lib/TagsManageFromExp.png"></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps10 noindent"><span class="rvts8">Each </span><span class="rvts13">sequence box</span><span class="rvts8"> in the upper part of the window represents a unique succession of synthetic steps. Clicking one reveals the individual steps it represents in the lower window section.</span></li>
- <li class="rvps10 noindent"><span class="rvts8">Clicking a </span><span class="rvts13">step arrow</span><span class="rvts8"> shows all associated experiments in the right-side panel, sorted by yield.&nbsp;</span></li>
- <li class="rvps10 noindent"><span class="rvts8">Clicking one of the listed </span><span class="rvts13">experiments</span><span class="rvts8"> opens it in the protocol area, for examination of its contents. Note that only </span><span class="rvts17">finalized</span><span class="rvts8"> server experiments are enabled for examination, unfinalized ones are considered work in progress. All experiments are enabled, however, when working with your local database.</span></li>
+ <li class="rvps15 noindent"><span class="rvts47">Add/Remove Predefined Tags</span><span class="rvts8">: Check the box next to any existing tag to add it to your experiment. Unchecking it removes the tag from that experiment. Multiple tags can be checked or unchecked.</span></li>
+ <li class="rvps3 noindent"><span class="rvts47">Create New Tags:</span><span class="rvts8"> Type a name into the text field next to the </span><span class="rvts49">Add</span><span class="rvts8"> button, then click </span><span class="rvts49">Add</span><span class="rvts8"> to create the tag, which is immediately attached to the current experiment.&nbsp;</span></li>
+ <li class="rvps3 noindent"><span class="rvts47">Delete Tags:</span><span class="rvts8"> Click the </span><span class="rvts48">x</span><span class="rvts8"> next to a tag to delete it from your tag list - including from all experiments using it. The number in parentheses shows how many experiments currently use that tag. If you only want to remove a tag from the current experiment, simply uncheck it instead.</span></li>
+ <li class="rvps3 noindent"><span class="rvts47">Rename Tags</span><span class="rvts8">: When a tag is selected (highlighted), its title is displayed in the text field, and the</span><span class="rvts17"> </span><span class="rvts49">Add</span><span class="rvts8"> button switches to </span><span class="rvts49">Rename</span><span class="rvts8">. Edit the title in the text field and click </span><span class="rvts49">Rename</span><span class="rvts8">. The updated title is subsequently applied both in your tag list and across all experiments that use it.</span></li>
 </ul>
-<p class="rvps7"><span class="rvts8">This analysis can be toggled to run either on your own local experiments, or on the experiments of all ELN users stored in an optional in‑house server database:</span></p>
-<p class="rvps50"><span class="rvts52">&nbsp; </span><img alt="" style="width : 108px; height : 80px; padding : 1px;" src="lib/Conn_DatabaseSelection.png"></p>
-<p class="rvps49"><span class="rvts8">The sequence boxes are color-coded to indicate their role in the connection graph. Hovering the mouse pointer over the sequence title in the steps area (lower window section) informs about their specific role:</span></p>
-<p class="rvps10"><span class="rvts52">&nbsp; </span><img alt="" style="width : 241px; height : 95px; padding : 1px;" src="lib/Conn_LabelInfo.png"></p>
-<p class="rvps10"><span class="rvts8">The </span><span class="rvts13">merge point</span><span class="rvts8"> is a special graph element representing a common intermediate resulting from multiple incoming sequences and consumed by multiple outgoing sequences.&nbsp;</span></p>
-<p class="rvps30"><span class="rvts52">&nbsp; </span><img alt="" style="width : 284px; height : 91px; padding : 1px;" src="lib/Conn_Connector.png"></p>
-<p class="rvps18"><a name="StructureGraph"></a><span class="rvts15">Structure Graph</span></p>
-<p class="rvps24"><span class="rvts8">The </span><span class="rvts17">Structure Graph</span><span class="rvts8"> constructs the same network as above, but based on molecular structures instead of sequences.&nbsp;</span></p>
-<p class="rvps7"><img alt="" style="width : 81px; height : 47px; padding : 1px;" src="lib/Conn_btnSchemeGraph.png"></p>
-<p class="rvps7"><span class="rvts8">Clicking the </span><span class="rvts17">Structure Graph</span><span class="rvts8"> button opens this space demanding graph type in full screen mode. Its step numbers are assigned per underlying sequence, so they are not unique in the overall scheme.</span></p>
-<p class="rvps10"><img alt="" style="width : 856px; height : 378px; padding : 1px;" src="lib/Conn_SequenceSchemes.png"></p>
-<p class="rvps7"><span class="rvts8">The controls in the top right screen corner let you toggle between local and server database (if present), export the graph to PDF (landscape mode), and to change the magnification level:</span></p>
-<p class="rvps7"><img alt="" style="width : 165px; height : 41px; padding : 1px;" src="lib/Conn_SchemeControls.png"></p>
-<p class="rvps24"><span class="rvts8"><br/></span></p>
-<p class="rvps18"><span class="rvts16"><br/></span></p>
-<p class="rvps32"><span class="rvts8"><br/></span></p>
-<p class="rvps46"><span class="rvts16"><br/></span></p>
-<p class="rvps46"><span class="rvts16"></span><span class="rvts16"></span></p>
+<p class="rvps29"><span class="rvts8">A variation of this dialog is available from the Search menu: </span><span class="rvts51">Search → Manage Tags ...</span><span class="rvts8"> It is intended for general tag management independent of the current experiment, and therefore does not display the tag‑assignment check boxes shown in the dialog above. Aside from that, it provides the same functionality as above current experiment‑specific version.</span></p>
+<p class="rvps36"><span class="rvts15">Searching for Tags</span></p>
+<p class="rvps10"><span class="rvts52">Tag searches are described in </span><a class="rvts53" href="ExperimentTagSearch.html">this chapter</a><span class="rvts52">.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8"></span><span class="rvts8"></span></p>
 
             </div>
             

@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
-  <title>Synthetic Connections</title>
+  <title>Experiment Tag Search</title>
   <meta name="description" content="" /> 
   <meta name="keywords" content="">
 
@@ -22,11 +22,11 @@
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Synthetic Connections">
+  <meta name="twitter:title" content="Experiment Tag Search">
   <meta name="twitter:description" content="">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="Synthetic Connections" />
+  <meta property="og:title" content="Experiment Tag Search" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="Phoenix ELN Help" /> 
@@ -173,64 +173,37 @@
 
     <article>
         <div id="topic-content" class="container-fluid" 
-		  data-hnd-id="SyntheticConnections"
-		  data-hnd-context="16"
-		  data-hnd-title="Synthetic Connections"
+		  data-hnd-id="ExperimentTagSearch"
+		  data-hnd-context="24"
+		  data-hnd-title="Experiment Tag Search"
 		>
             
                 <div class="navigation">
                     <ol class="breadcrumb">
-                        
+                        <li>Searches</li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ExperimentTagSearch.html" title="Experiment Tag Search" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ELNDataMigration.html" title="ELN Data Migration" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="FullText-Search.html" title="Full-Text Search" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="SyntheticConnections.html" title="Synthetic Connections" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
 
             <a id="main-content"></a>
 
-            <h2>Synthetic Connections</h2>
+            <h2>Experiment Tag Search</h2>
 
             <div class="main-content">
                 
-<hr style="height : 1px; background-color : #000000; border-style : none;">
-<p class="rvps18"><span class="rvts15">Introduction</span></p>
-<p class="rvps7"><span class="rvts49">Phoenix ELN</span><span class="rvts8"> allows to visually map all synthetic pathways leading to and originating from the reaction of the current experiment, based on the analysis of all available ELN experiments - either your own local ones, or the experiments of all users within your organization (via an optional in-house </span><a class="rvts14" href="ELNServer.html">ELN server database</a><span class="rvts8">). Since the complexity of possible connections increases with accumulating number of experiments, mathematical graph theory is utilized to handle also complex scenarios.</span></p>
-<p class="rvps48"><span class="rvts8">There are two connection graph types available, both accessible from the bottom right corner of the reaction sketch area in the experiment protocol:</span></p>
-<p class="rvps34"><img alt="" style="width : 103px; height : 48px; padding : 1px;" src="lib/Conn_Buttons.png"></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps47 noindent"><span class="rvts28">Synthetic Connections</span><span class="rvts8"> (left button) represents a connection graph based on sequences. This abstraction allows the display of complex connection networks in a condensed and interactive manner.&nbsp;</span></li>
- <li class="rvps30 noindent"><span class="rvts28">Scheme Connections</span><span class="rvts8"> (right button) represents the synthetic connections based on chemical structures instead of sequences. As this can be space demanding, this graph is displayed in full screen mode.</span></li>
-</ul>
-<p class="rvps5"><span class="rvts15">Sequence Connections</span></p>
-<p class="rvps7"><span class="rvts8">Click the marked button to access this analysis type:</span></p>
-<p class="rvps7"><span class="rvts8">&nbsp;</span><img alt="" style="width : 87px; height : 49px; padding : 1px;" src="lib/Conn_btnSequenceGraph.png"></p>
-<p class="rvps34"><span class="rvts8">As the connections graph originates from the reaction of the current experiment, its sequence box as well as the its synthetic step (the lower window part) are marked by a </span><span class="rvts69">➤</span><span class="rvts8"> symbol. Additionally, the resulting start sequence is color coded accordingly.</span></p>
-<p class="rvps28"><span class="rvts8">&nbsp;</span><img alt="" style="width : 735px; height : 487px; padding : 1px;" src="lib/Conn_FullWindow2.png"></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps10 noindent"><span class="rvts8">Each </span><span class="rvts13">sequence box</span><span class="rvts8"> in the upper part of the window represents a unique succession of synthetic steps. Clicking one reveals the individual steps it represents in the lower window section.</span></li>
- <li class="rvps10 noindent"><span class="rvts8">Clicking a </span><span class="rvts13">step arrow</span><span class="rvts8"> shows all associated experiments in the right-side panel, sorted by yield.&nbsp;</span></li>
- <li class="rvps10 noindent"><span class="rvts8">Clicking one of the listed </span><span class="rvts13">experiments</span><span class="rvts8"> opens it in the protocol area, for examination of its contents. Note that only </span><span class="rvts17">finalized</span><span class="rvts8"> server experiments are enabled for examination, unfinalized ones are considered work in progress. All experiments are enabled, however, when working with your local database.</span></li>
-</ul>
-<p class="rvps7"><span class="rvts8">This analysis can be toggled to run either on your own local experiments, or on the experiments of all ELN users stored in an optional in‑house server database:</span></p>
-<p class="rvps50"><span class="rvts52">&nbsp; </span><img alt="" style="width : 108px; height : 80px; padding : 1px;" src="lib/Conn_DatabaseSelection.png"></p>
-<p class="rvps49"><span class="rvts8">The sequence boxes are color-coded to indicate their role in the connection graph. Hovering the mouse pointer over the sequence title in the steps area (lower window section) informs about their specific role:</span></p>
-<p class="rvps10"><span class="rvts52">&nbsp; </span><img alt="" style="width : 241px; height : 95px; padding : 1px;" src="lib/Conn_LabelInfo.png"></p>
-<p class="rvps10"><span class="rvts8">The </span><span class="rvts13">merge point</span><span class="rvts8"> is a special graph element representing a common intermediate resulting from multiple incoming sequences and consumed by multiple outgoing sequences.&nbsp;</span></p>
-<p class="rvps30"><span class="rvts52">&nbsp; </span><img alt="" style="width : 284px; height : 91px; padding : 1px;" src="lib/Conn_Connector.png"></p>
-<p class="rvps18"><a name="StructureGraph"></a><span class="rvts15">Structure Graph</span></p>
-<p class="rvps24"><span class="rvts8">The </span><span class="rvts17">Structure Graph</span><span class="rvts8"> constructs the same network as above, but based on molecular structures instead of sequences.&nbsp;</span></p>
-<p class="rvps7"><img alt="" style="width : 81px; height : 47px; padding : 1px;" src="lib/Conn_btnSchemeGraph.png"></p>
-<p class="rvps7"><span class="rvts8">Clicking the </span><span class="rvts17">Structure Graph</span><span class="rvts8"> button opens this space demanding graph type in full screen mode. Its step numbers are assigned per underlying sequence, so they are not unique in the overall scheme.</span></p>
-<p class="rvps10"><img alt="" style="width : 856px; height : 378px; padding : 1px;" src="lib/Conn_SequenceSchemes.png"></p>
-<p class="rvps7"><span class="rvts8">The controls in the top right screen corner let you toggle between local and server database (if present), export the graph to PDF (landscape mode), and to change the magnification level:</span></p>
-<p class="rvps7"><img alt="" style="width : 165px; height : 41px; padding : 1px;" src="lib/Conn_SchemeControls.png"></p>
+<p class="rvps3"><span class="rvts8">Experiment Tag Search is accessible from the </span><span class="rvts17">main toolbar</span><span class="rvts8">:</span></p>
+<p class="rvps43"><span class="rvts51">Search → Experiment Tags ...</span></p>
+<p class="rvps11"><span class="rvts8">This search retrieves all experiments containing one ore multiple of your predefined tags. Just select the individual tags(s) you are looking for, and the experiment results list updates accordingly. Note that an experiment must contain all of the selected tags to be listed in the results. And unlike the other search types, tag‑based searches also return </span><span class="rvts17">unfinalized</span><span class="rvts8"> experiments.</span></p>
+<p class="rvps7"><img alt="" style="width : 429px; height : 215px; padding : 1px;" src="lib/Search_Tags.png"></p>
 <p class="rvps24"><span class="rvts8"><br/></span></p>
-<p class="rvps18"><span class="rvts16"><br/></span></p>
-<p class="rvps32"><span class="rvts8"><br/></span></p>
-<p class="rvps46"><span class="rvts16"><br/></span></p>
-<p class="rvps46"><span class="rvts16"></span><span class="rvts16"></span></p>
+<p class="rvps24"><span class="rvts8">Click any experiment in the result list to open it in the protocol area. The number to the right of the tag name indicate the number of experiments currently referencing it.</span></p>
+<p class="rvps7"><span class="rvts8"><br/></span></p>
+<p class="rvps24"><span class="rvts8"><br/></span></p>
+<p class="rvps24"><span class="rvts8"><br/></span></p>
+<p class="rvps24"><span class="rvts8"></span><span class="rvts8"></span></p>
 
             </div>
             
