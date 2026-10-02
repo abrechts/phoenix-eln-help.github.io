@@ -421,71 +421,134 @@ span.rvts61
 span.rvts62
 {
  font-family: 'Segoe UI';
- font-weight: bold;
- color: #ff0000;
 }
 span.rvts63
-{
- font-family: 'Segoe UI';
-}
-span.rvts64
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
  font-style: italic;
  color: #333333;
 }
+span.rvts64
+{
+ font-size: 9pt;
+ font-family: 'Segoe UI';
+ font-weight: bold;
+ color: #bf0000;
+}
 span.rvts65
 {
- font-size: 11pt;
+ font-size: 9pt;
  font-family: 'Segoe UI';
+ color: #bf0000;
 }
 span.rvts66
-{
- font-size: 11pt;
- font-family: 'Segoe UI';
- background-color: #e5e5e5;
-}
-span.rvts67
-{
- font-size: 9.5pt;
- font-family: 'Cascadia Mono';
- color: #000000;
- background-color: #ffffff;
-}
-span.rvts68
 {
  font-size: 12pt;
  font-family: 'Segoe UI';
 }
-span.rvts69
+span.rvts67
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
  color: #000000;
 }
-span.rvts70
-{
- font-size: 11pt;
- font-family: 'Segoe UI';
- font-weight: bold;
- color: #000000;
-}
-span.rvts71
-{
- font-size: 11pt;
- font-family: 'Segoe UI';
- color: #000000;
- text-decoration: underline;
-}
-span.rvts72
+span.rvts68
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
  font-style: italic;
  color: #000000;
 }
+span.rvts69
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts70
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+}
+span.rvts71
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+}
+span.rvts72
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ font-weight: bold;
+}
 span.rvts73
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ font-style: italic;
+ color: #000000;
+ background-color: #e5e5e5;
+}
+span.rvts74
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ font-style: italic;
+ background-color: #e5e5e5;
+}
+span.rvts75
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+}
+span.rvts76
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ background-color: #e5e5e5;
+}
+span.rvts77
+{
+ font-size: 9.5pt;
+ font-family: 'Cascadia Mono';
+ color: #000000;
+ background-color: #ffffff;
+}
+span.rvts78
+{
+ font-size: 12pt;
+ font-family: 'Segoe UI';
+}
+span.rvts79
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ color: #000000;
+}
+span.rvts80
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts81
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ color: #000000;
+ text-decoration: underline;
+}
+span.rvts82
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ font-style: italic;
+ color: #000000;
+}
+span.rvts83
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
@@ -686,29 +749,39 @@ p,ul,ol /* Paragraph Style */
 }
 .rvps45
 {
- margin: 14px 0px 0px 0px;
+ margin: 6px 0px 6px 24px;
 }
 .rvps46
 {
- margin: 14px 0px 0px 0px;
+ text-indent: -24px;
+ padding: 0px 0px 0px 24px;
+ margin: 0px 0px 2px 28px;
 }
 .rvps47
 {
- margin: 10px 0px 4px 0px;
+ margin: 14px 0px 0px 0px;
 }
 .rvps48
 {
- margin: 6px 0px 2px 0px;
+ margin: 14px 0px 0px 0px;
 }
 .rvps49
 {
- margin: 4px 0px 4px 0px;
+ margin: 10px 0px 4px 0px;
 }
 .rvps50
 {
- margin: 8px 0px 4px 0px;
+ margin: 6px 0px 2px 0px;
 }
 .rvps51
+{
+ margin: 4px 0px 4px 0px;
+}
+.rvps52
+{
+ margin: 8px 0px 4px 0px;
+}
+.rvps53
 {
  margin: 10px 0px 8px 0px;
 }

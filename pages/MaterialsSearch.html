@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
-  <title>ELN Data Migration</title>
+  <title>Materials Search</title>
   <meta name="description" content="" /> 
   <meta name="keywords" content="">
 
@@ -22,11 +22,11 @@
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="ELN Data Migration">
+  <meta name="twitter:title" content="Materials Search">
   <meta name="twitter:description" content="">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="ELN Data Migration" />
+  <meta property="og:title" content="Materials Search" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="Phoenix ELN Help" /> 
@@ -173,57 +173,62 @@
 
     <article>
         <div id="topic-content" class="container-fluid" 
-		  data-hnd-id="ELNDataMigration"
-		  data-hnd-context="20"
-		  data-hnd-title="ELN Data Migration"
+		  data-hnd-id="MaterialsSearch"
+		  data-hnd-context="26"
+		  data-hnd-title="Materials Search"
 		>
             
                 <div class="navigation">
                     <ol class="breadcrumb">
-                        
+                        <li>Searches</li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="SyntheticConnections.html" title="Synthetic Connections" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ELNServer.html" title="ELN Server" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ReactionSearch.html" title="Substructure Search" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="FullText-Search.html" title="Full-Text Search" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
 
             <a id="main-content"></a>
 
-            <h2>ELN Data Migration</h2>
+            <h2>Materials Search</h2>
 
             <div class="main-content">
                 
 <hr style="height : 1px; background-color : #000000; border-style : none;">
 <p class="rvps22"><span class="rvts15">Introduction</span></p>
-<p class="rvps3"><span class="rvts8">When moving to a new computer, you typically also want to transfer your </span><span class="rvts17">Phoenix ELN</span><span class="rvts8"> data to the new environment. In principle, this may be achieved by following methods, each having its own drawbacks:</span></p>
+<p class="rvps3"><span class="rvts67">Materials Search lets you locate experiments by the materials they utilize - any combination of reagents, solvents and auxiliaries, optionally restricted to a given amount range. It is accessible from the main toolbar:</span></p>
+<p class="rvps43"><span class="rvts51">Search → Materials ...</span></p>
+<p class="rvps3"><span class="rvts67">As with all search functions except tag search, only </span><span class="rvts68">finalized</span><span class="rvts67"> experiments are included in the results — unfinalized ones are treated as work in progress. Clicking an experiment hit in the results opens it in the protocol for examination.</span></p>
+<p class="rvps10"><img alt="" style="width : 441px; height : 460px; padding : 1px;" src="lib/MatSearch_FullDialog.png"></p>
+<p class="rvps22"><span class="rvts15">Selecting a Material</span></p>
+<p class="rvps3"><span class="rvts67">First choose the material category you are looking for — </span><span class="rvts69">Reagents</span><span class="rvts67">, </span><span class="rvts69">Solvents</span><span class="rvts67"> or </span><span class="rvts69">Auxiliaries</span><span class="rvts67">. The list below </span><span class="rvts65">❸</span><span class="rvts41"> </span><span class="rvts67">shows all material names of the selected category used by the experiments of the currently searched database, so it contains only names that can actually produce a hit.&nbsp;</span></p>
+<p class="rvps3"><span class="rvts67">Type into the locate field </span><span class="rvts65">❶</span><span class="rvts41"> </span><span class="rvts67">above the list to narrow down. By default the typed text has to match the </span><span class="rvts69">beginning</span><span class="rvts67"> of a material name. Check </span><span class="rvts69">Substring</span><span class="rvts67"> </span><span class="rvts65">❷</span><span class="rvts41"> </span><span class="rvts67">to also find the search characters anywhere within a name (at least two characters are required in this mode).</span></p>
+<p class="rvps45"><span class="rvts73">&nbsp;Example </span><span class="rvts67">: Typing 'eth' finds 'Ethanol' and 'Ethyl acetate'; with </span><span class="rvts69">Substring</span><span class="rvts67"> checked, it also finds 'Triethylamine'.</span></p>
+<p class="rvps10"><span class="rvts67">Click a material in the list to add it as a search filter. It appears as a label below the list </span><span class="rvts65">❹</span><span class="rvts67">, using the same color coding as the protocol (gray for reagents, blue for solvents, dark orange for auxiliaries), and the results list updates immediately.</span></p>
+<p class="rvps22"><span class="rvts15">Combining Filters</span></p>
+<p class="rvps3"><span class="rvts67">Any number of search filters up to a maximum of 10 can be added, freely mixed across the three categories. An experiment is listed only if it contains </span><span class="rvts69">all</span><span class="rvts67"> of the added materials. Adding another filter therefore always narrows the result list.</span></p>
+<p class="rvps45"><span class="rvts73">&nbsp;Example </span><span class="rvts67">: 'Triethylamine' + 'Dichloromethane' + 'Silica gel' finds all experiments in which all three materials are present.</span></p>
+<p class="rvps10"><span class="rvts67">Multiple materials of the same category can be added, adding the same material twice has no effect. To remove a search filter, click the </span><span class="rvts69">X</span><span class="rvts67"> on its label.</span></p>
+<p class="rvps22"><span class="rvts15">Restricting the Equivalents</span></p>
+<p class="rvps3"><span class="rvts67">By default a filter matches any equivalents of the material. To restrict these, click the filter label to open the amount dialog, where the equivalent search ranges can be specified:</span></p>
+<p class="rvps30"><span class="rvts67">&nbsp;</span><img alt="" style="width : 296px; height : 197px; padding : 1px;" src="lib/MatSearch_Equivs.png"></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps3 noindent"><span class="rvts8">If you regularly back up your personal </span><span class="rvts17">Documents</span><span class="rvts8"> folder, restoring the last backup on your new computer will also recover your </span><span class="rvts17">Phoenix ELN</span><span class="rvts8"> data, along with your other files. However, keep in mind that any recent changes to your experiments made after the last backup will not be included, and therefore will be lost after the restore process.&nbsp;</span></li>
- <li class="rvps3 noindent"><span class="rvts8">If optionally connected to an in-house </span><a class="rvts20" href="ELNServer.html">Phoenix ELN</a><a class="rvts14" href="ELNServer.html"> server</a><span class="rvts8">, you can perform a 'restore from server' action to recreate your local experiments database on your new computer. This is also your last resort if your original ELN data are not available anymore, e.g. after a sudden hardware failure. While efficiently restoring your experiments at their latest state, this will not update your ELN application files and settings.&nbsp;</span></li>
- <li class="rvps3 noindent"><span class="rvts8">You could also manually move the 'Phoenix ELN Data' folder and its contents from your personal </span><span class="rvts17">Documents</span><span class="rvts8"> folder to your new computer at the same location, replacing the current one if already present. However, such manual actions bear the risk of data loss and inconsistencies, and therefore are not recommended.</span></li>
+ <li style="text-indent: 0px" class="rvps46 noindent"><span class="rvts69">any</span><span class="rvts67"> - equivalents are not considered</span></li>
+ <li style="text-indent: 0px" class="rvps46 noindent"><span class="rvts69">at least</span><span class="rvts67"> (≥) / </span><span class="rvts69">at most</span><span class="rvts67"> (≤) / </span><span class="rvts69">exactly</span><span class="rvts67"> (=) a given value</span></li>
+ <li style="text-indent: 0px" class="rvps46 noindent"><span class="rvts69">between</span><span class="rvts67"> a lower and an upper value</span></li>
 </ul>
-<p class="rvps22"><span class="rvts15">ELN Transfer Package</span></p>
-<p class="rvps11"><span class="rvts8">To overcome the limitations of above methods, a simple and reliable method for transferring all </span><span class="rvts17">Phoenix ELN </span><span class="rvts8">experiments and settings is available. It allows to seamlessly perform a complete ELN data transfer, including all settings, at the desired point in time - typically just before switching your work to the new ELN installation.</span></p>
-<p class="rvps11"><span class="rvts8">Here are the required steps:</span></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps8 noindent"><span class="rvts8">Open </span><span class="rvts17">Phoenix ELN </span><span class="rvts8">on the computer to be replaced, i.e. where your current experiments reside.</span></li>
- <li class="rvps24 noindent"><span class="rvts8">Go to </span><span class="rvts17">Tools &gt; ELN Data Migration &gt; Create Transfer Pack</span><span class="rvts8">. This creates a transfer package (.elnpkg) at the location of your choice. </span><span class="rvts17">Note</span><span class="rvts8">: Although the package is named after the first user encountered in the experiments database, it will contain the experiments of all local users if present.</span></li>
-</ul>
-<p class="rvps53"><span class="rvts8">&nbsp; &nbsp; &nbsp; </span><img alt="" style="width : 345px; height : 184px; padding : 1px;" src="lib/Menu_DataMigration.png"></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps8 noindent"><span class="rvts8">If not yet present, install </span><span class="rvts17">Phoenix ELN </span><span class="rvts8">on the new computer. It will contain the demo experiments at this stage.</span></li>
- <li class="rvps8 noindent"><span class="rvts8">Open </span><span class="rvts17">Phoenix ELN</span><span class="rvts8"> on the new computer, go to </span><span class="rvts17">Tools &gt; ELN Data Migration &gt; Import Transfer Pack</span><span class="rvts8">, select the .elnpkg package you created before, then click 'Import Package' in the appearing dialog.</span></li>
- <li class="rvps24 noindent"><span class="rvts8">The application will perform the transfer and subsequently restarts with your transferred experiments and settings in place.</span><br/><span class="rvts8"><br/></span></li>
-</ul>
-<p class="rvps24"><span class="rvts21">Important</span><span class="rvts8">: Do not continue to use the previous ELN installation anymore after data migration, since this would result in two parallel, but inconsistent copies of your experiments database!</span></p>
+<p class="rvps10"><span class="rvts67">Amounts are always expressed in equivalents relative to the reference reactant: </span><span class="rvts69">eq</span><span class="rvts67"> for reagents, volume equivalents </span><span class="rvts69">vq</span><span class="rvts67"> for solvents and weight equivalents </span><span class="rvts69">wq</span><span class="rvts67"> for auxiliaries. Because these equivalents are maintained for every material, the filter works regardless of whether the amount was originally entered in equivalents, grams or milliliters.</span></p>
+<p class="rvps3"><span class="rvts67">The material label reflects the current setting, e.g. </span><span class="rvts68">'≥ 1.5 eq Triethylamine'</span><span class="rvts67"> or </span><span class="rvts68">'3-10 vq Dichloromethane'</span><span class="rvts67">. Clicking the label again lets you adjust the range at any time.</span></p>
+<p class="rvps45"><span class="rvts74">&nbsp;Example </span><span class="rvts67">: '≥ 1.5 eq Triethylamine' finds all experiments using at least a 1.5-fold excess of triethylamine.</span></p>
+<p class="rvps22"><span class="rvts15">Results</span></p>
+<p class="rvps3"><span class="rvts71">The number of matching experiments is shown below the result list </span><span class="rvts65">❺</span><span class="rvts71">. At most 200 experiments are listed at a time — refine the query with additional filters or an amount range to get a more specific result.</span></p>
+<p class="rvps3"><span class="rvts71">The dropdown </span><span class="rvts65">❻</span><span class="rvts71"> determines the listing order, either </span><span class="rvts72">by yield</span><span class="rvts71"> or </span><span class="rvts72">by scale</span><span class="rvts71"> (the amount of reference reactant used), highest first. This makes it easy to spot, for example, the best-yielding or the largest-scale experiment among the hits.</span></p>
+<p class="rvps22"><span class="rvts15">Local and Server Search</span></p>
+<p class="rvps3"><span class="rvts71">If connected to the ELN server database, check </span><span class="rvts72">Server Search</span><span class="rvts71"> </span><span class="rvts65">❼</span><span class="rvts41"> </span><span class="rvts71">to search all shared experiments of the server database instead of your local ones. The added filters remain in place and are simply re-evaluated against the newly selected database. The checkbox is disabled when no server is configured or currently unavailable.</span></p>
+<p class="rvps3"><span class="rvts66"><br/></span></p>
 <p class="rvps24"><span class="rvts8"><br/></span></p>
-<p class="rvps22"><span class="rvts15">Revert Migration</span></p>
-<p class="rvps24"><span class="rvts8">Be careful not to overwrite </span><span class="rvts17">non-demo</span><span class="rvts8"> experiments by accident when transferring your ELN data to the new computer. A new installation always contains demo experiments, which are uncritical to replace. However, if your new installation already contains productive non-demo experiments for some reason, you will obtain a warning about potential data loss before proceeding with the data migration.</span></p>
-<p class="rvps7"><span class="rvts8">If against all warnings productive data accidentally were overwritten, e.g. by importing a wrong transfer package, an emergency operation is available for reverting the operation. Thus, the file '</span><span class="rvts13">recovery.elnpkg</span><span class="rvts8">' is always placed on your desktop after completed data migration where </span><span class="rvts17">non-demo</span><span class="rvts8"> experiments were replaced. You can import this file via </span><span class="rvts17">Tools &gt; ELN Data Migration &gt; Import Transfer Pack</span><span class="rvts8"> to revert the migration to its original state.&nbsp;</span></p>
-<p class="rvps7"><span class="rvts8">Once the intended data migration was successfully completed, you should delete above recovery file as soon as possible, to prevent accidental permanent reversal to an earlier state of your ELN environment at a later stage by importing it again. Note that reverting a data migration cannot be reverted.</span></p>
-<p class="rvps24"><span class="rvts8"><br/></span></p>
-<p class="rvps24"><span class="rvts8"><br/></span></p>
-<p class="rvps24"><span class="rvts8"></span><span class="rvts8"></span></p>
+<p class="rvps10"><span class="rvts70"><br/></span></p>
+<p class="rvps10"><span class="rvts31">&nbsp;</span><span class="rvts8"></span></p>
 
             </div>
             
