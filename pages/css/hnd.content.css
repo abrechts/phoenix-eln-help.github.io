@@ -289,34 +289,34 @@ span.rvts41
 }
 span.rvts42
 {
- font-family: 'Segoe UI';
- color: #ff3333;
-}
-span.rvts43
-{
  font-size: 11pt;
  font-family: 'Segoe UI';
  color: #414141;
 }
-span.rvts44
+span.rvts43
 {
  font-family: 'Segoe UI';
+ color: #000000;
+}
+span.rvts44
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ font-weight: bold;
  color: #000000;
 }
 span.rvts45
 {
  font-size: 11pt;
  font-family: 'Segoe UI';
- font-weight: bold;
- color: #000000;
-}
-span.rvts46
-{
- font-size: 11pt;
- font-family: 'Segoe UI';
  font-style: italic;
  font-weight: bold;
  color: #3f3f3f;
+}
+span.rvts46
+{
+ font-family: 'Segoe UI';
+ color: #c00000;
 }
 span.rvts47
 {
